@@ -1,0 +1,443 @@
+@font-face{font-family:"ubuntu-regular";src:url("/styles/fonts/ubuntu-regular.eot");src:url("/styles/fonts/ubuntu-regular.eot?#iefix")format("embedded-opentype"),url("/styles/fonts/ubuntu-regular.woff")format("woff"),url("/styles/fonts/ubuntu-regular.ttf")format("truetype");font-weight:400;font-style:normal;font-stretch:normal}
+@font-face{font-family:"ubuntu-medium";src:url("/styles/fonts/ubuntu-medium.eot");src:url("/styles/fonts/ubuntu-medium.eot?#iefix")format("embedded-opentype"),url("/styles/fonts/ubuntu-medium.woff")format("woff"),url("/styles/fonts/ubuntu-medium.ttf")format("truetype");font-weight:500;font-style:normal;font-stretch:normal}
+@font-face{font-family:"ubuntu-bold";src:url("/styles/fonts/ubuntu-bold.eot");src:url("/styles/fonts/ubuntu-bold.eot?#iefix")format("embedded-opentype"),url("/styles/fonts/ubuntu-bold.woff")format("woff"),url("/styles/fonts/ubuntu-bold.ttf")format("truetype");font-weight:700;font-style:normal;font-stretch:normal}
+@font-face{font-family:"neuton-bold";src:url("/styles/fonts/neuton-bold.eot");src:url("/styles/fonts/neuton-bold.eot?#iefix")format("embedded-opentype"),url("/styles/fonts/neuton-bold.woff")format("woff"),url("/styles/fonts/neuton-bold.ttf")format("truetype");font-weight:700;font-style:normal;font-stretch:normal}
+@font-face{font-family:"sourcesanspro-bold";src:url("/styles/fonts/sourcesanspro-bold.eot");src:url("/styles/fonts/sourcesanspro-bold.eot?#iefix")format("embedded-opentype"),url("/styles/fonts/sourcesanspro-bold.woff")format("woff"),url("/styles/fonts/sourcesanspro-bold.ttf")format("truetype");font-weight:700;font-style:normal;font-stretch:normal}
+
+:root {
+  --color--gray: #636363;
+}
+
+* {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('/dev/_desktop.png');
+  background-size: 1920px auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 8000px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  width: 1620px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  font-size: 24px;
+  line-height: 1.16;
+  font-family: 'ubuntu-medium', sans-serif;
+  text-decoration: none;
+  padding: 13px 60px;
+  background: radial-gradient(328.29% 978.25% at 8.33% 109.74%, #FF4C40 23.45%, #FDA141 100%);
+  backdrop-filter: blur(102.464px);
+  color: #F6F6F6;
+  transform: skew(-15deg);
+}
+.btn img {
+  margin: 0 20px 0 0;
+  transform: skew(15deg);
+  height: 28px;
+  width: auto;
+}
+.btn span {
+  transform: skew(15deg);
+}
+
+.gradient-text {
+  background: radial-gradient(113.05% 1761% at -8.67% 5.68%, #05439D 0%, #1AAEC6 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+header {
+  background: radial-gradient(1072.48% 98302.72% at 176.28% -887.64%, #0957A5 0%, rgba(158, 158, 158, 0) 100%);
+  backdrop-filter: blur(91.5274px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 99;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header a.logo {
+  display: inline-block;
+  margin: 0 110px 0 0;
+}
+
+header a.logo img {
+  width: 62px;
+  height: auto;
+}
+
+header .left-side {
+  display: flex;
+  align-items: center;
+}
+
+header nav a {
+  font-size: 22px;
+  line-height: 1.18;
+  color: #fff;
+  text-decoration: none;
+  transition: .3s opacity;
+}
+
+header nav a:hover {
+  opacity: .8;
+}
+
+header nav a:not(:last-child) {
+  margin: 0 32px 0 0;
+}
+
+header .right-side {
+  display: flex;
+  align-items: center;
+}
+
+.lang-dropdown-wrap {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(63.8645px);
+  transform: skew(-15deg);
+  margin: 0 0 0 10px;
+}
+
+.lang-dropdown-wrap > span {
+  display: inline-flex;
+  padding: 10px 20px;
+  align-items: center;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  transform: skew(15deg);
+}
+.lang-dropdown-wrap > span img {
+  margin: 0 5px 0 0;
+}
+
+.video-preview {
+  position: relative;
+}
+.video-preview::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5)
+}
+
+.video-preview video {
+  width: 100%;
+  height: auto;
+}
+
+.about-block {
+  padding: 65px 0;
+  position: relative;
+  overflow: hidden;
+}
+.about-block::before,
+.about-block::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+}
+.about-block::before {
+  width: 500px;
+  height: 250px;
+  background: center center / 500px auto no-repeat url("/images/triangle-1.svg");
+  top: 0;
+  z-index: 2;
+}
+.about-block::after {
+  width: 995px;
+  height: 500px;
+  background: center center / 995px auto no-repeat url("/images/triangle-2.svg");
+  bottom: 0;
+  z-index: 3;
+}
+
+.about-block-capt {
+  font-size: 86px;
+  letter-spacing: 2px;
+  line-height: 1;
+  font-family: 'neuton-bold', sans-serif;
+  margin: 0 0 40px 0;
+}
+.about-block-capt b {
+  font-family: 'ubuntu-bold', sans-serif;
+}
+.about-block-desc {
+  font-size: 28px;
+  line-height: 1.25;
+  color: var(--color--gray);
+  font-family: 'sourcesanspro-bold', sans-serif;
+}
+
+.block-caption {
+  margin: 0 0 65px 0;
+}
+
+.block-caption {
+  font-size: 66px;
+  line-height: 1.16;
+  font-family: 'ubuntu-bold', sans-serif;
+}
+
+.services-block {
+  padding: 80px 0;
+}
+
+.tabs-wrap {
+  display: flex;
+  align-items: flex-start;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 40px 0 0;
+  flex: none;
+}
+.tabs .tab {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 85px;
+  color: var(--color--gray);
+  font-size: 25px;
+  line-height: 1.16;
+  font-family: 'ubuntu-bold', sans-serif;
+  position: relative;
+  background: radial-gradient(286.47% 1468.06% at 41.08% 68.24%, rgba(166, 202, 255, 0.32) 0%, rgba(255, 255, 255, 0.45) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  backdrop-filter: blur(75px);
+  padding: 0 60px;
+  cursor: pointer;
+  transition: .3s transform
+}
+.tabs .tab::before,
+.tabs .tab::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 52px;
+  height: 45px;
+  border: 3px solid #44B3CD;
+  transition: .3s opacity, .3s width, .3s height, .3s transform;
+  z-index: -1;
+}
+.tabs .tab::before {
+  bottom: -1.5px;
+  left: -1.5px;
+  border-top: 0;
+  border-right: 0;
+}
+.tabs .tab::after {
+  top: -1.5px;
+  right: -1.5px;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+.tabs .tab:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+
+.tabs .tab.active {
+  background: radial-gradient(1005.95% 3313.86% at -31.66% 50.59%, #023497 17.75%, #19AEC6 69.43%, #595959 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  backdrop-filter: blur(85.8068px);
+  color: #fff;
+  transform: translateX(-25px);
+}
+.tabs .tab.active::before {
+  opacity: 0;
+}
+.tabs .tab.active::after {
+  border-top: 0;
+  height: 100%;
+  transform: translateX(24px);
+  top: 0;
+}
+.tab-content {
+  display:none
+}
+.tab-content.active {
+  display: block;
+}
+
+.tabs-wrap .video-wrap {
+  display: block;
+  margin: 0 0 40px 0;
+  overflow: hidden;
+  position: relative;
+  min-height: 615px;
+}
+
+.tabs-wrap .video-wrap video {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.tab-info {
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--color--gray);
+  position: relative;
+}
+
+.tab-info::before,
+.tab-info::after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+.tab-info::before {
+  height: 124px;
+  width: 3px;
+  background: #FF9541;
+  top: 0;
+  left: -45px;
+}
+
+.tab-info::after {
+  width: 78px;
+  height: 78px;
+  left: -155px;
+  top: 10px;
+  background: center center / 78px auto no-repeat url("/images/info.svg");
+}
+
+.tabs-wrap .video-wrap .video-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.tabs-wrap .video-wrap .video-preview::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 125px;
+  height: 125px;
+  background: center center / 124px auto no-repeat url("/images/play-video.svg");
+  transition: .3s opacity;
+  z-index: 9;
+}
+
+.tabs-wrap .video-wrap .video-preview img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projects-block {
+  position: relative;
+  padding: 100px 0;
+  height: 1070px;
+}
+.projects-block::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 700px;
+  height: 200px;
+  background: center center / 700px auto no-repeat url("/images/triangle-3.svg");
+}
+
+.swiper {
+  height: 200px
+}
+
+.about-company-block {
+  height: 1050px;
+}
+
+.benefits-block {
+  padding: 95px 0;
+}
+
+.benefits-wrap {
+  display: flex;
+  margin: 0 -80px;
+  width: calc(100% + 160px);
+  align-items: flex-start;
+}
+
+.benefits-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 88px;
+  background: radial-gradient(876.66% 2015.24% at -40.13% 142.89%, #023497 27.92%, #19AEC6 93.37%, #595959 100%);
+}
+.benefits-item:hover {
+  background: radial-gradient(286.26% 978.25% at 0% 109.74%, #FF4C40 23.45%, #FDA141 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  backdrop-filter: blur(83.8343px);
+  width: 700px;
+  height: 600px;
+  flex: none
+}
+
+.benefits-item:not(:last-child) {
+  margin: 0 4px 0 0;
+}
+
+.benefits-item img {
+  max-width: 103px;
+  max-height: 112px;
+}
+
+.benefits-item .capt {
+  display: inline-block;
+  font-size: 48px;
+  line-height: 1.15;
+  margin: 0 0 20px 0;
+}
+
+.benefits-item .desc {
+  font-size: 28px;
+  line-height: 1.26;
+}
