@@ -2,6 +2,9 @@
 @font-face{font-family:"ubuntu-medium";src:url("/styles/fonts/ubuntu-medium.eot");src:url("/styles/fonts/ubuntu-medium.eot?#iefix")format("embedded-opentype"),url("/styles/fonts/ubuntu-medium.woff")format("woff"),url("/styles/fonts/ubuntu-medium.ttf")format("truetype");font-weight:500;font-style:normal;font-stretch:normal}
 @font-face{font-family:"ubuntu-bold";src:url("/styles/fonts/ubuntu-bold.eot");src:url("/styles/fonts/ubuntu-bold.eot?#iefix")format("embedded-opentype"),url("/styles/fonts/ubuntu-bold.woff")format("woff"),url("/styles/fonts/ubuntu-bold.ttf")format("truetype");font-weight:700;font-style:normal;font-stretch:normal}
 @font-face{font-family:"neuton-bold";src:url("/styles/fonts/neuton-bold.eot");src:url("/styles/fonts/neuton-bold.eot?#iefix")format("embedded-opentype"),url("/styles/fonts/neuton-bold.woff")format("woff"),url("/styles/fonts/neuton-bold.ttf")format("truetype");font-weight:700;font-style:normal;font-stretch:normal}
+@font-face{font-family:"sourcesanspro-light";src:url("/styles/fonts/sourcesanspro-light.eot");src:url("/styles/fonts/sourcesanspro-light.eot?#iefix")format("embedded-opentype"),url("/styles/fonts/sourcesanspro-light.woff")format("woff"),url("/styles/fonts/sourcesanspro-light.ttf")format("truetype");font-weight:300;font-style:normal;font-stretch:normal}
+@font-face{font-family:"sourcesanspro-regular";src:url("/styles/fonts/sourcesanspro-regular.eot");src:url("/styles/fonts/sourcesanspro-regular.eot?#iefix")format("embedded-opentype"),url("/styles/fonts/sourcesanspro-regular.woff")format("woff"),url("/styles/fonts/sourcesanspro-regular.ttf")format("truetype");font-weight:400;font-style:normal;font-stretch:normal}
+@font-face{font-family:"sourcesanspro-semibold";src:url("/styles/fonts/sourcesanspro-semibold.eot");src:url("/styles/fonts/sourcesanspro-semibold.eot?#iefix")format("embedded-opentype"),url("/styles/fonts/sourcesanspro-semibold.woff")format("woff"),url("/styles/fonts/sourcesanspro-semibold.ttf")format("truetype");font-weight:600;font-style:normal;font-stretch:normal}
 @font-face{font-family:"sourcesanspro-bold";src:url("/styles/fonts/sourcesanspro-bold.eot");src:url("/styles/fonts/sourcesanspro-bold.eot?#iefix")format("embedded-opentype"),url("/styles/fonts/sourcesanspro-bold.woff")format("woff"),url("/styles/fonts/sourcesanspro-bold.ttf")format("truetype");font-weight:700;font-style:normal;font-stretch:normal}
 
 :root {
@@ -16,13 +19,13 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   background-image: url('/dev/_desktop.png');
   background-size: 1920px auto;
   background-position: top center;
   background-repeat: no-repeat;
   height: 8000px;
-}
+} */
 
 body {
   margin: 0;
@@ -58,7 +61,7 @@ body {
 }
 
 .gradient-text {
-  background: radial-gradient(113.05% 1761% at -8.67% 5.68%, #05439D 0%, #1AAEC6 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background: radial-gradient(113.05% 1761% at -8.67% 5.68%, #05439D 0%, #1AAEC6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -66,14 +69,18 @@ body {
 }
 
 header {
-  background: radial-gradient(1072.48% 98302.72% at 176.28% -887.64%, #0957A5 0%, rgba(158, 158, 158, 0) 100%);
+  background: rgba(0,0,0,.75);
   backdrop-filter: blur(91.5274px);
+  filter: drop-shadow(0px 3.66109px 10.9833px rgba(80, 112, 215, 0.13));
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 10px 0;
   z-index: 99;
+  /* -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden; */
 }
 
 header .container {
@@ -194,10 +201,12 @@ header .right-side {
   font-family: 'ubuntu-bold', sans-serif;
 }
 .about-block-desc {
+  display: inline-block;
   font-size: 28px;
   line-height: 1.25;
   color: var(--color--gray);
   font-family: 'sourcesanspro-bold', sans-serif;
+  margin: 0 0 0 10px;
 }
 
 .block-caption {
@@ -211,7 +220,8 @@ header .right-side {
 }
 
 .services-block {
-  padding: 80px 0;
+  background: #F2F7FB;
+  padding: 70px 0;
 }
 
 .tabs-wrap {
@@ -368,10 +378,30 @@ header .right-side {
   object-fit: cover;
 }
 
+.swiper-projects-main {
+  margin: 0 0 22px 0;
+}
+
+.swiper-projects-thumbs .swiper-slide {
+  padding: 0 17px 0 0;
+  position: relative;
+  font-size: 0;
+}
+.swiper-projects-thumbs .swiper-slide::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(66.66deg, rgba(166, 202, 255, 0.66) 8.63%, #FFFFFF 125.85%);
+  filter: drop-shadow(0px 4px 5px rgba(172, 172, 172, 0.34));
+  width: calc(100% - 17px);
+  height: 100%;
+}
+
 .projects-block {
   position: relative;
   padding: 100px 0;
-  height: 1070px;
 }
 .projects-block::after {
   content: '';
@@ -384,12 +414,191 @@ header .right-side {
   background: center center / 700px auto no-repeat url("/images/triangle-3.svg");
 }
 
-.swiper {
-  height: 200px
+.projects-block .container {
+  overflow: hidden;
+}
+
+.project-item-wrap {
+  display: flex;
+}
+
+.project-item-wrap > img {
+  width: 100%;
+  height: 586px;
+  object-fit: cover;
+}
+
+.project-item-content {
+  flex: none;
+  width: 525px;
+  margin: 0 0 0 100px;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.project-item-title {
+  display: block;
+  font-size: 48px;
+  line-height: 1.145;
+  font-family: 'ubuntu-bold', sans-serif;
+  color: #3A3C3F;
+  margin: 0 0 40px 0;
+}
+
+.project-item-desc {
+  display: block;
+  font-size: 26px;
+  line-height: 1.23;
+  font-family: "sourcesanspro-semibold", sans-serif;
+  color: #636363;
+  margin: 0 0 50px 0;
+}
+
+.project-info-list {
+  margin: 0 0 30px 0;
+  padding: 0;
+  list-style-type: none;
+}
+.project-info-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-info-list li span:nth-child(1) {
+  font-size: 28px;
+  line-height: 1;
+  font-family: "sourcesanspro-regular", sans-serif;
+  color: #636363;
+}
+.project-info-list li span:nth-child(2) {
+  font-size: 28px;
+  line-height: 1;
+  font-family: "ubuntu-bold", sans-serif;
+  color: #636363;
+}
+.project-info-list li:not(:last-child) {
+  margin: 0 0 12px 0;
+}
+
+/* .swiper-wrapper {
+  overflow: hidden;
+} */
+
+.btn-recomend {
+  display: inline-block;
+  padding: 10px 50px;
+  margin: 0 0 30px 0;
+  text-decoration: none;
+  background: #F2F7FB;
+  border: 1px dashed #CECECE;
+  transform: skew(-15deg);
+}
+.btn-recomend span {
+  display: inline-flex;
+  align-items: center;
+  font-size: 25px;
+  line-height: 1.28;
+  color: #636363;
+  font-family: "sourcesanspro-light", sans-serif;
+  transform: skew(15deg);
+}
+.btn-recomend span img {
+  margin: 0 0 0 30px;
+}
+
+.swiper-projects-thumbs .swiper-slide {
+  width: 20%;
+  height: 100%;
+}
+
+.swiper-projects-thumbs .swiper-slide > img:nth-child(1) {
+  width: 100%;
+}
+.swiper-projects-thumbs .swiper-slide img:nth-child(2) {
+  max-width: 88px;
+  max-height: 54px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
 }
 
 .about-company-block {
-  height: 1050px;
+  background: radial-gradient(876.66% 2015.24% at -40.13% 142.89%, #023497 27.92%, #19AEC6 93.37%, #595959 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  backdrop-filter: blur(83.8343px);
+  position: relative;
+  overflow: hidden;
+}
+.about-company-block::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 717px;
+  height: 356px;
+  background: center center / 717px auto no-repeat url("/images/triangle-4.svg");
+}
+
+.about-company-block .container {
+  display: flex;
+  color: #fff;
+}
+
+.about-company-block .left-side {
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  width: 857px;
+  height: 1000px;
+  transform: translateX(-160px);
+  background: top center / 857px auto no-repeat url("/images/rectangle-1.svg");
+}
+
+.about-company-block .left-side .text-wrap {
+  width: 432px;
+  margin: 50px 0 0 150px;
+  padding: 100px 0 0 0;
+}
+
+.about-company-block .left-side .capt b {
+  font-size: 170px;
+}
+
+.about-company-block .left-side .capt {
+  display: block;
+  font-size: 90px;
+  line-height: 1;
+  font-family: "ubuntu-bold", sans-serif;
+  margin: 0 0 26px 0;
+}
+.about-company-block .left-side .desc {
+  display: block;
+  font-size: 26px;
+  line-height: 1.23;
+  font-family: "sourcesanspro-bold", sans-serif;
+  margin: 0 0 100px 0;
+}
+
+.about-company-block .right-side {
+  display: flex;
+  flex-direction: column;
+  padding: 230px 0 0 0;
+  margin: 0 0 0 -50px;
+}
+
+.about-company-block .right-side .capt {
+  font-size: 68px;
+  line-height: 1.14;
+  font-family: "ubuntu-bold", sans-serif;
+  margin: 0 0 60px 0;
+}
+
+.about-company-block .right-side .desc {
+  font-size: 26px;
+  line-height: 1.23;
+  font-family: "sourcesanspro-regular", sans-serif;
 }
 
 .benefits-block {
@@ -440,4 +649,8 @@ header .right-side {
 .benefits-item .desc {
   font-size: 28px;
   line-height: 1.26;
+}
+
+.benefits-block {
+  display: none;
 }

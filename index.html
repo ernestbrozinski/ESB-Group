@@ -92,16 +92,71 @@
     <div class="container">
       <h4 class="block-caption gradient-text">Проекты</h4>
 
-      <div class="swiper-projects">
+      <div class="swiper-projects-main">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">
+            <div class="project-item-wrap">
+              <img src="/images/projects/project1.jpeg" alt="">
+
+              <div class="project-item-content">
+                <span class="project-item-title">Установка пожарной системы в БЦ Олимп</span>
+                <span class="project-item-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+              
+                <ul class="project-info-list">
+                  <li><span>Площадь объекта:</span><span>3450 m<sup>2</sup></span></li>
+                  <li><span>Срок выполнения:</span><span>12 дней</span></li>
+                </ul>
+
+                <a href="#" class="btn-recomend" download><span>Рекомендательное письмо <img src="/images/circle-arrow-right.svg" alt=""></span></a>
+
+                <div class="btn"><span>Оставить заявку</span></div>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-item-wrap">
+              <img src="/images/projects/project1.jpeg" alt="">
+
+              <div class="project-item-content">
+                <span class="project-item-title">Установка пожарной системы в БЦ Олимп 2</span>
+                <span class="project-item-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-item-wrap">
+              <img src="/images/projects/project1.jpeg" alt="">
+
+              <div class="project-item-content">
+                <span class="project-item-title">Установка пожарной системы в БЦ Олимп 3</span>
+                <span class="project-item-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+              </div>
+
+            </div>
+          </div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-scrollbar"></div>
+        <div class="swiper-pagination-main"></div>
+        <!-- <div class="swiper-scrollbar-main"></div> -->
+      </div>
+
+      <div class="swiper-projects-thumbs">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/images/projects/project1.jpeg" />
+            <img src="/images/projects/project-icon-1.svg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/projects/project1.jpeg" />
+            <img src="/images/projects/project-icon-2.svg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/projects/project1.jpeg" />
+            <img src="/images/projects/project-icon-3.svg" alt="">
+          </div>
+        </div>
       </div>
 
     </div>
@@ -110,14 +165,18 @@
   <div class="about-company-block">
     <div class="container">
       <div class="left-side">
-        <span class="capt">8 лет на рынке</span>
-        <span class="desc">Многолетний опыт и безупречная репутация </span>
-        <span class="capt">B2B</span>
-        <span class="desc">Выстраиваем надежные партнерские отношения с коммерческими обьектами.</span>
+        <div class="text-wrap">
+          <span class="capt"><b>8</b> лет <br/>на рынке</span>
+          <span class="desc">Многолетний опыт и безупречная репутация </span>
+          <span class="capt"><b>B2B</b></span>
+          <span class="desc">Выстраиваем надежные партнерские отношения с коммерческими обьектами.</span>
+        </div>
       </div>
       <div class="right-side">
-        <h1 class="capt">Компания ESB Group</h1>
-        <span class="desc">Компания была основана в 2014 году профессионалами с богатым опытом работы в области "BSM", пожарной системы и "HVAC". Наша команда это квалифицированные монтажные бригады и качественно подготовленный обслуживающий персонал. Современное высококачественное оборудование позволяет нам  реализовать  ваши идеи в проектах любой сложности. Наша экспертность и высокие стандарты позволили нам создать надежные партнерские отношения с крупнейшими коммерческими объектами по всей Грузии. "ESB Group" это честный, гибкий, инновационный и надежный партнер который выполнит самые сложные и нестандартные задачи.</span>
+        <div class="text-wrap">
+          <h1 class="capt">Компания ESB Group</h1>
+          <span class="desc">Компания была основана в 2014 году профессионалами с богатым опытом работы в области "BSM", пожарной системы и "HVAC". Наша команда это квалифицированные монтажные бригады и качественно подготовленный обслуживающий персонал. Современное высококачественное оборудование позволяет нам  реализовать  ваши идеи в проектах любой сложности. Наша экспертность и высокие стандарты позволили нам создать надежные партнерские отношения с крупнейшими коммерческими объектами по всей Грузии. "ESB Group" это честный, гибкий, инновационный и надежный партнер который выполнит самые сложные и нестандартные задачи.</span>
+        </div>
       </div>
     </div>
   </div>
@@ -188,9 +247,30 @@
       // })
 
       // SLIDER PROJECTS
-      const swiper = new Swiper('.swiper-projects', {
+      var swiperProjectsMain = new Swiper('.swiper-projects-main', {
+        spaceBetween: 0,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+        loopedSlides: 4
+      });
+      var swiperProjectsThumbs = new Swiper('.swiper-projects-thumbs', {
+        spaceBetween: 0,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+        loop: true,
+        loopedSlides: 4
+      });
+      swiperProjectsMain.controller.control = swiperProjectsThumbs;
+      swiperProjectsThumbs.controller.control = swiperProjectsMain;
 
-        direction: 'vertical',
+
+      const swiperProjectsInner = new Swiper('.swiper-projects-inner', {
+
         loop: true,
 
         pagination: {
@@ -201,13 +281,11 @@
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
-  
+
         scrollbar: {
           el: '.swiper-scrollbar',
         },
       });
-
-
 
   });
   </script>
