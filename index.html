@@ -31,9 +31,10 @@
           <span>Стать клиентом</span>
         </a>
         <div class="lang-dropdown-wrap">
-          <span><img src="images/flag-rus.svg" alt="">RUS</span>
+          <span id="lang-dropdown-btn"><img src="images/flag-rus.svg" alt="">RUS</span>
           <div class="lang-dropdown">
-
+            <a href="#"><img src="images/flag-rus.svg" alt="">ENG</a>
+            <a href="#"><img src="images/flag-rus.svg" alt="">GE</a>
           </div>
         </div>
       </div>
@@ -42,7 +43,7 @@
 
   <div class="video-preview">
     <video  preload="auto" no-controls autoplay loop playsinline muted>
-      <source src="/video/video.mp4" type="video/mp4">
+      <source src="/video/video.webm" type="video/mp4">
     </video>
   </div>
 
@@ -50,6 +51,7 @@
     <div class="container">
       <h1 class="about-block-capt">Компания <b>“ESB GROUP”</b><br/> <span class="gradient-text">Высший уровень сервиса</span><br/> с упором на главное.</h1>
       <span class="about-block-desc">Лидеры в сфере  отопления, вентиляции и кондиционирования.<br/> Мы здесь, чтобы помочь вам!</span>
+      <img src="/images/white-logo.svg" alt="" class="logo">
     </div>
   </div>
 
@@ -92,25 +94,30 @@
     <div class="container">
       <h4 class="block-caption gradient-text">Проекты</h4>
 
-      <div class="swiper-projects-main">
+      <div class="swiper swiper-projects-main">
+        
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="project-item-wrap">
-              <img src="/images/projects/project1.jpeg" alt="">
+
+              <div class="swiper swiper-projects-inner">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="/images/projects/project1.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="/images/projects/project1.jpeg" alt=""></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
 
               <div class="project-item-content">
                 <span class="project-item-title">Установка пожарной системы в БЦ Олимп</span>
                 <span class="project-item-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
-              
                 <ul class="project-info-list">
                   <li><span>Площадь объекта:</span><span>3450 m<sup>2</sup></span></li>
                   <li><span>Срок выполнения:</span><span>12 дней</span></li>
                 </ul>
-
                 <a href="#" class="btn-recomend" download><span>Рекомендательное письмо <img src="/images/circle-arrow-right.svg" alt=""></span></a>
-
                 <div class="btn"><span>Оставить заявку</span></div>
-
               </div>
 
             </div>
@@ -142,7 +149,7 @@
         <!-- <div class="swiper-scrollbar-main"></div> -->
       </div>
 
-      <div class="swiper-projects-thumbs">
+      <div class="swiper swiper-projects-thumbs">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="/images/projects/project1.jpeg" />
@@ -157,6 +164,7 @@
             <img src="/images/projects/project-icon-3.svg" alt="">
           </div>
         </div>
+        <div class="swiper-scrollbar"></div>
       </div>
 
     </div>
@@ -175,9 +183,10 @@
       <div class="right-side">
         <div class="text-wrap">
           <h1 class="capt">Компания ESB Group</h1>
-          <span class="desc">Компания была основана в 2014 году профессионалами с богатым опытом работы в области "BSM", пожарной системы и "HVAC". Наша команда это квалифицированные монтажные бригады и качественно подготовленный обслуживающий персонал. Современное высококачественное оборудование позволяет нам  реализовать  ваши идеи в проектах любой сложности. Наша экспертность и высокие стандарты позволили нам создать надежные партнерские отношения с крупнейшими коммерческими объектами по всей Грузии. "ESB Group" это честный, гибкий, инновационный и надежный партнер который выполнит самые сложные и нестандартные задачи.</span>
+          <span class="desc">Компания была основана в 2014 году профессионалами с богатым опытом работы в области "BSM", пожарной системы и "HVAC".<br/> Наша команда это квалифицированные монтажные бригады и качественно подготовленный обслуживающий персонал. Современное высококачественное оборудование позволяет нам  реализовать  ваши идеи в проектах любой сложности. Наша экспертность и высокие стандарты позволили нам создать надежные партнерские отношения с крупнейшими коммерческими объектами по всей Грузии. "ESB Group" это честный, гибкий, инновационный и надежный партнер который выполнит самые сложные и нестандартные задачи.</span>
         </div>
       </div>
+      <img src="/images/white-logo.svg" alt="" class="logo">
     </div>
   </div>
 
@@ -205,10 +214,115 @@
     </div>
   </div>
 
+  <div class="partners-block">
+    <div class="container">
+      <div class="block-caption gradient-text">Партнеры</div>
+
+      <div class="partners-wrap">
+        <div class="partners-content">
+          <p>ESB Group зарекомендовала себя как тщательно организованная компания, с полной информационной открытостью и комплексным подходом к поставленным задачам, нацеленное на взаимное долгосрочное сотрудничество.</p>
+          <p>Мы ценим каждого нашего клиента и благодарим наших партнеров за доверие.</p>
+        </div>
+        <div class="partners-slider">
+          <div class="swiper swiper-partners">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="partners-slider-wrap">
+                  <div class="partners-slider-item">
+                    <img src="/images/partners/partner-1.png" alt="">
+                  </div>
+                  <div class="partners-slider-item">
+                    <img src="/images/partners/partner-2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="partners-slider-wrap">
+                  <div class="partners-slider-item">
+                    <img src="/images/partners/partner-2.png" alt="">
+                  </div>
+                  <div class="partners-slider-item">
+                    <img src="/images/partners/partner-1.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="partners-slider-wrap">
+                  <div class="partners-slider-item">
+                    <img src="/images/partners/partner-1.png" alt="">
+                  </div>
+                  <div class="partners-slider-item">
+                    <img src="/images/partners/partner-2.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev-partners"></div>
+          <div class="swiper-button-next-partners"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="contacts-side">
+      <div class="contats-side-content">
+        <h4 class="block-caption">Контакты</h4>
+
+        <div class="contacts-info">
+          <div>
+            <span>Служба поддержки:</span>
+            <a class="contacts-tel" href="tel:8 800 333-45-45">8 800 333-45-45 <span><img src="/images/viber.svg" alt=""></span> <span><img src="/images/whatsapp.svg" alt=""></span></a>
+            <a href="mailto:info@esbgroup.ge">info@esbgroup.ge</a>
+          </div>
+          <div>
+            <a href="#">Юридический адрес<br/> 6 Ioane Petritsi St, Tbilisi<br/> №495859900408940</a>
+          </div>
+        </div>
+      </div>
+   
+    </div>
+    <a href="#" class="map-side"></a>
+  </div>
+    <div class="bot-line">
+      <div class="container">
+        <span>ESB GROUP<br/> International Company. © Все права защищены. </span>
+      </div>
+    </div>
+  </footer>
+
   <script src="/js/swiper.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function(){
+
+      const langDropDown = document.querySelector('.lang-dropdown'),
+            langDropDownLink = document.querySelectorAll('.lang-dropdown a');
+
+      // CLICK OUTSIDE
+      window.addEventListener('click', function(e){  
+        if (document.querySelector('#lang-dropdown-btn').contains(e.target)) {
+          langDropDown.classList.add('active');
+        } else{
+          langDropDown.classList.remove('active');
+        }
+      });
+
+      const options = {
+        root: null,
+        rootMargin: "500px",
+        threshold: 1,
+      };
   
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, options);
+      observer.observe(document.querySelector(".about-company-block"));
+
       //TABS
       const tabs = document.querySelectorAll('.tabs .tab'),
             tabsContent = document.querySelectorAll('.tabs-content .tab-content');
@@ -236,7 +350,6 @@
 
       window.addEventListener("resize", checkTabHeight);
 
-
       // TAB VIDEO SCRIPTS
       const videoWrap = document.querySelectorAll('.video-preview');
 
@@ -254,7 +367,8 @@
           prevEl: '.swiper-button-prev',
         },
         loop: true,
-        loopedSlides: 4
+        loopedSlides: 4,
+        navigation: false
       });
       var swiperProjectsThumbs = new Swiper('.swiper-projects-thumbs', {
         spaceBetween: 0,
@@ -263,25 +377,37 @@
         touchRatio: 0.2,
         slideToClickedSlide: true,
         loop: true,
-        loopedSlides: 4
+        loopedSlides: 4,
+        navigation: false,
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          draggable: true,
+        },
       });
       swiperProjectsMain.controller.control = swiperProjectsThumbs;
       swiperProjectsThumbs.controller.control = swiperProjectsMain;
 
+      document.querySelectorAll('.project-item-wrap').forEach(el => {
+        const swiperProjectsInner = new Swiper(el.querySelector('.swiper-projects-inner'), {
+          loop: true,
+          navigation: {
+            nextEl: el.querySelector('.swiper-button-next'),
+            prevEl: el.querySelector('.swiper-button-prev'),
+          },
+        });
+      })
 
-      const swiperProjectsInner = new Swiper('.swiper-projects-inner', {
-
+      const swiperPartners = new Swiper('.swiper-partners', {
         loop: true,
-
+        slidesPerView: 3,
+        spaceBetween: 0,
         pagination: {
           el: '.swiper-pagination',
         },
-
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.swiper-button-next-partners',
+          prevEl: '.swiper-button-prev-partners',
         },
-
         scrollbar: {
           el: '.swiper-scrollbar',
         },
