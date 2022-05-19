@@ -98,6 +98,10 @@ header .left-side {
   align-items: center;
 }
 
+header nav {
+  font-size: 0;
+}
+
 header nav a {
   font-size: 1.146vw;
   line-height: 1.18;
