@@ -433,6 +433,7 @@ header .right-side {
   width: 1.563vw;
   height: 1.563vw;
   background: center center / 1.563vw auto no-repeat url("/images/slider-arrow.svg");
+  transition: .3s opacity;
 }
 .swiper-projects-inner .swiper-button-prev {
   transform: rotate(180deg);
@@ -444,6 +445,11 @@ header .right-side {
 .swiper-projects-inner .swiper-button-prev::after,
 .swiper-projects-inner .swiper-button-next::after {
   display: none;
+}
+
+.swiper-projects-inner .swiper-button-prev:hover,
+.swiper-projects-inner .swiper-button-next:hover {
+  opacity: .8;
 }
 
 .swiper-projects-thumbs {
@@ -888,6 +894,7 @@ header .right-side {
   height: 1.563vw;
   left: -3.333vw;
   background: center center / 1.563vw auto no-repeat url("/images/circle-arrow-right-blue.svg");
+  transition: .3s opacity;
 }
 .swiper-button-prev-partners {
   top: calc(50% - 1.823vw);
@@ -895,6 +902,12 @@ header .right-side {
 }
 .swiper-button-next-partners {
   top: calc(50% + 1.042vw);
+}
+
+.swiper-button-prev-partners:hover,
+.swiper-button-next-partners:hover {
+  cursor: pointer;
+  opacity: .8;
 }
 
 .partners-slider .swiper-button-prev,
