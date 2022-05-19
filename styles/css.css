@@ -129,6 +129,8 @@ header .right-side {
   transform: skew(-15deg);
   margin: 0 0 0 0.521vw;
   position: relative;
+  cursor: pointer;
+  font-size: 0;
 }
 
 .lang-dropdown-wrap > span {
