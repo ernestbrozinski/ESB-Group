@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <header>
+  <header class="desktop">
     <div class="container">
       <div class="left-side">
         <a href="/" class="logo"><img src="images/logo.svg" alt=""></a>
@@ -36,6 +36,13 @@
           </div>
         </div>
       </div>
+    </div>
+  </header>
+
+  <header class="mobile">
+    <div class="container">
+      <a href="/" class="logo"><img src="images/logo.svg" alt=""></a>
+      <a href="#" id="btn-menu"><img src="images/menu.svg" alt=""></a>
     </div>
   </header>
 
@@ -346,7 +353,12 @@
       }
       checkTabHeight();
 
-      window.addEventListener("resize", checkTabHeight);
+      window.addEventListener("resize", function() {
+        checkTabHeight();
+
+
+        
+      });
 
       // TAB VIDEO SCRIPTS
       const videoWrap = document.querySelectorAll('.video-preview');
