@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <link rel="stylesheet" href="styles/swiper.min.css">
-  <link rel="stylesheet" href="styles/css.css">
-  <link rel="stylesheet" href="styles/css-640.css">
+  <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri() ?>/images/favicon.ico">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/styles/swiper.min.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/styles/css.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/styles/css-640.css">
   <title>ESB Group</title>
 </head>
 <body>
 
   <div class="modal" id="client-modal">
     <a href="#" class="close"></a>
-    <a href="/" class="logo"><img src="images/logo.svg" alt=""></a>
+    <a href="/" class="logo"><img src="<?php echo get_template_directory_uri() ?>/images/logo.svg" alt=""></a>
     <form method="POST">
       <label>
         <span>Имя</span>
@@ -36,7 +36,7 @@
   <header class="desktop">
     <div class="container">
       <div class="left-side">
-        <a href="/" class="logo"><img src="images/logo.svg" alt=""></a>
+        <a href="/" class="logo"><img src="<?php echo get_template_directory_uri() ?>/images/logo.svg" alt=""></a>
         <nav>
           <a href="#services">Услуги</a>
           <a href="#projects">Проекты</a>
@@ -47,14 +47,14 @@
       </div>
       <div class="right-side">
         <a href="#client-modal" class="btn modal-btn">
-          <img src="/images/user.svg" alt="">
+          <img src="<?php echo get_template_directory_uri() ?>/images/user.svg" alt="">
           <span>Стать клиентом</span>
         </a>
         <div class="lang-dropdown-wrap">
-          <span id="lang-dropdown-btn"><img src="images/flag-rus.svg" alt="">RUS</span>
+          <span id="lang-dropdown-btn"><img src="<?php echo get_template_directory_uri() ?>/images/flag-rus.svg" alt="">RUS</span>
           <div class="lang-dropdown">
-            <a href="#"><img src="images/flag-en.svg" alt="">ENG</a>
-            <a href="#"><img src="images/flag-ge.svg" alt="">GE</a>
+            <a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/flag-en.svg" alt="">ENG</a>
+            <a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/flag-ge.svg" alt="">GE</a>
           </div>
         </div>
       </div>
@@ -63,13 +63,13 @@
 
   <header class="mobile">
     <div class="container">
-      <a href="/" class="logo"><img src="images/logo.svg" alt=""></a>
-      <a href="#" id="btn-menu"><img src="images/menu.svg" alt=""></a>
+      <a href="/" class="logo"><img src="<?php echo get_template_directory_uri() ?>/images/logo.svg" alt=""></a>
+      <a href="#" id="btn-menu"><img src="<?php echo get_template_directory_uri() ?>/images/menu.svg" alt=""></a>
     </div>
 
     <div id="mobile-menu">
-      <a href="#" class="" id="mob-menu-close"><img src="/images/menu-close.svg" alt=""></a>
-      <a href="/" class="logo"><img src="images/logo.svg" alt=""></a>
+      <a href="#" class="" id="mob-menu-close"><img src="<?php echo get_template_directory_uri() ?>/images/menu-close.svg" alt=""></a>
+      <a href="/" class="logo"><img src="<?php echo get_template_directory_uri() ?>/images/logo.svg" alt=""></a>
       <nav>
         <a href="#services">Услуги</a>
         <a href="#projects">Проекты</a>
@@ -78,14 +78,14 @@
         <a href="#contacts">Контакты</a>
       </nav>
       <a href="#client-modal" class="btn modal-btn">
-        <img src="/images/user.svg" alt="">
+        <img src="<?php echo get_template_directory_uri() ?>/images/user.svg" alt="">
         <span>Стать клиентом</span>
       </a>
       <div class="lang-dropdown-wrap">
-        <span id="lang-dropdown-btn-mob"><img src="images/flag-rus.svg" alt="">RUS</span>
+        <span id="lang-dropdown-btn-mob"><img src="<?php echo get_template_directory_uri() ?>/images/flag-rus.svg" alt="">RUS</span>
         <div class="lang-dropdown">
-          <a href="#"><img src="images/flag-en.svg" alt="">ENG</a>
-          <a href="#"><img src="images/flag-ge.svg" alt="">GE</a>
+          <a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/flag-en.svg" alt="">ENG</a>
+          <a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/flag-ge.svg" alt="">GE</a>
         </div>
       </div>
     </div>
@@ -93,7 +93,7 @@
 
   <div class="main-video video-preview">
     <video  preload="auto" no-controls autoplay loop playsinline muted>
-      <source src="/video/video.webm" type="video/mp4">
+      <source src="<?php echo get_template_directory_uri() ?>/video/video.webm" type="video/mp4">
     </video>
   </div>
 
@@ -101,7 +101,7 @@
     <div class="container">
       <h1 class="about-block-capt">Компания <b>“ESB GROUP”</b><br/> <span class="gradient-text">Высший уровень сервиса</span><br/> с упором на главное.</h1>
       <span class="about-block-desc">Лидеры в сфере  отопления, вентиляции и кондиционирования.<br/> Мы здесь, чтобы помочь вам!</span>
-      <img src="/images/white-logo.svg" alt="" class="logo">
+      <img src="<?php echo get_template_directory_uri() ?>/images/white-logo.svg" alt="" class="logo">
     </div>
   </div>
 
@@ -122,69 +122,19 @@
           <div class="tab-content">
             <div class="video-wrap">
               <div class="video-preview">
-                <img src="/images/video-preview.png" alt="">
+                <img src="<?php echo get_template_directory_uri() ?>/images/video-preview.png" alt="">
               </div>
               <video  preload="auto" controls>
-                <source src="/video/video.mp4" type="video/mp4">
+                <source src="<?php echo get_template_directory_uri() ?>/video/video.mp4" type="video/mp4">
               </video>
             </div>
             <span class="tab-info">Электронная система безопасности (ЭСБ) - совокупность технических устройств, включающая радиотехнические, электронно-оптические, электронно-вычислительные и другие устройства, а также оператора, и выполняющая определенные функции по обеспечению безопасности объекта, процесса его работы и персонала, территорий</span>
           </div>
-          <div class="tab-content">
-            <div class="video-wrap">
-              <div class="video-preview">
-                <img src="/images/video-preview.png" alt="">
-              </div>
-              <video  preload="auto" controls>
-                <source src="/video/video.mp4" type="video/mp4">
-              </video>
-            </div>
-            <span class="tab-info">2 Электронная система безопасности (ЭСБ) - совокупность технических устройств, включающая радиотехнические, электронно-оптические, электронно-вычислительные и другие устройства, а также оператора, и выполняющая определенные функции по обеспечению безопасности объекта, процесса его работы и персонала, территорий</span>
-          </div>
-          <div class="tab-content">
-            <div class="video-wrap">
-              <div class="video-preview">
-                <img src="/images/video-preview.png" alt="">
-              </div>
-              <video  preload="auto" controls>
-                <source src="/video/video.mp4" type="video/mp4">
-              </video>
-            </div>
-            <span class="tab-info">3 Электронная система безопасности (ЭСБ) - совокупность технических устройств, включающая радиотехнические, электронно-оптические, электронно-вычислительные и другие устройства, а также оператора, и выполняющая определенные функции по обеспечению безопасности объекта, процесса его работы и персонала, территорий</span>
-          </div>
-          <div class="tab-content">
-            <div class="video-wrap">
-              <div class="video-preview">
-                <img src="/images/video-preview.png" alt="">
-              </div>
-              <video  preload="auto" controls>
-                <source src="/video/video.mp4" type="video/mp4">
-              </video>
-            </div>
-            <span class="tab-info">4 Электронная система безопасности (ЭСБ) - совокупность технических устройств, включающая радиотехнические, электронно-оптические, электронно-вычислительные и другие устройства, а также оператора, и выполняющая определенные функции по обеспечению безопасности объекта, процесса его работы и персонала, территорий</span>
-          </div>
-          <div class="tab-content">
-            <div class="video-wrap">
-              <div class="video-preview">
-                <img src="/images/video-preview.png" alt="">
-              </div>
-              <video  preload="auto" controls>
-                <source src="/video/video.mp4" type="video/mp4">
-              </video>
-            </div>
-            <span class="tab-info">5 Электронная система безопасности (ЭСБ) - совокупность технических устройств, включающая радиотехнические, электронно-оптические, электронно-вычислительные и другие устройства, а также оператора, и выполняющая определенные функции по обеспечению безопасности объекта, процесса его работы и персонала, территорий</span>
-          </div>
-          <div class="tab-content">
-            <div class="video-wrap">
-              <div class="video-preview">
-                <img src="/images/video-preview.png" alt="">
-              </div>
-              <video  preload="auto" controls>
-                <source src="/video/video.mp4" type="video/mp4">
-              </video>
-            </div>
-            <span class="tab-info">6 Электронная система безопасности (ЭСБ) - совокупность технических устройств, включающая радиотехнические, электронно-оптические, электронно-вычислительные и другие устройства, а также оператора, и выполняющая определенные функции по обеспечению безопасности объекта, процесса его работы и персонала, территорий</span>
-          </div>
+          <div class="tab-content">Content 2</div>
+          <div class="tab-content">Content 3</div>
+          <div class="tab-content">Content 4</div>
+          <div class="tab-content">Content 5</div>
+          <div class="tab-content">Content 6</div>
         </div>
       </div>
     </div>
@@ -197,14 +147,13 @@
       <div class="swiper swiper-projects-main">
         
         <div class="swiper-wrapper">
-          
           <div class="swiper-slide">
             <div class="project-item-wrap">
 
               <div class="swiper swiper-projects-inner">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="/images/projects/project1.jpeg" alt=""></div>
-                  <div class="swiper-slide"><img src="/images/projects/project2.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" alt=""></div>
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
@@ -217,7 +166,7 @@
                   <li><span>Площадь объекта:</span><span>3450 m<sup>2</sup></span></li>
                   <li><span>Срок выполнения:</span><span>12 дней</span></li>
                 </ul>
-                <a href="#" class="btn-recomend" download><span>Рекомендательное письмо <img src="/images/circle-arrow-right.svg" alt=""></span></a>
+                <a href="#" class="btn-recomend" download><span>Рекомендательное письмо <img src="<?php echo get_template_directory_uri() ?>/images/circle-arrow-right.svg" alt=""></span></a>
                 <a href="#" class="btn"><span>Оставить заявку</span></a>
               </div>
 
@@ -229,8 +178,8 @@
 
               <div class="swiper swiper-projects-inner">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="/images/projects/project3.jpeg" alt=""></div>
-                  <div class="swiper-slide"><img src="/images/projects/project4.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" alt=""></div>
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
@@ -243,7 +192,7 @@
                   <li><span>Площадь объекта:</span><span>3450 m<sup>2</sup></span></li>
                   <li><span>Срок выполнения:</span><span>12 дней</span></li>
                 </ul>
-                <a href="#" class="btn-recomend" download><span>Рекомендательное письмо <img src="/images/circle-arrow-right.svg" alt=""></span></a>
+                <a href="#" class="btn-recomend" download><span>Рекомендательное письмо <img src="<?php echo get_template_directory_uri() ?>/images/circle-arrow-right.svg" alt=""></span></a>
                 <a href="#" class="btn"><span>Оставить заявку</span></a>
               </div>
 
@@ -255,8 +204,8 @@
 
               <div class="swiper swiper-projects-inner">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="/images/projects/project1.jpeg" alt=""></div>
-                  <div class="swiper-slide"><img src="/images/projects/project1.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" alt=""></div>
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
@@ -269,7 +218,7 @@
                   <li><span>Площадь объекта:</span><span>3450 m<sup>2</sup></span></li>
                   <li><span>Срок выполнения:</span><span>12 дней</span></li>
                 </ul>
-                <a href="#" class="btn-recomend" download><span>Рекомендательное письмо <img src="/images/circle-arrow-right.svg" alt=""></span></a>
+                <a href="#" class="btn-recomend" download><span>Рекомендательное письмо <img src="<?php echo get_template_directory_uri() ?>/images/circle-arrow-right.svg" alt=""></span></a>
                 <a href="#" class="btn"><span>Оставить заявку</span></a>
               </div>
 
@@ -283,16 +232,16 @@
       <div class="swiper swiper-projects-thumbs">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="/images/projects/project1.jpeg" />
-            <img src="/images/projects/project-icon-1.svg" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project-icon-1.svg" alt="">
           </div>
           <div class="swiper-slide">
-            <img src="/images/projects/project3.jpeg" />
-            <img src="/images/projects/project-icon-2.svg" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project-icon-2.svg" alt="">
           </div>
           <div class="swiper-slide">
-            <img src="/images/projects/project5.jpeg" />
-            <img src="/images/projects/project-icon-3.svg" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project-icon-3.svg" alt="">
           </div>
         </div>
         <div class="swiper-scrollbar"></div>
@@ -317,7 +266,7 @@
           <span class="desc">Компания была основана в 2014 году профессионалами с богатым опытом работы в области "BSM", пожарной системы и "HVAC".<br/> Наша команда это квалифицированные монтажные бригады и качественно подготовленный обслуживающий персонал. Современное высококачественное оборудование позволяет нам  реализовать  ваши идеи в проектах любой сложности. Наша экспертность и высокие стандарты позволили нам создать надежные партнерские отношения с крупнейшими коммерческими объектами по всей Грузии. "ESB Group" это честный, гибкий, инновационный и надежный партнер который выполнит самые сложные и нестандартные задачи.</span>
         </div>
       </div>
-      <img src="/images/white-logo.svg" alt="" class="logo">
+      <img src="<?php echo get_template_directory_uri() ?>/images/white-logo.svg" alt="" class="logo">
     </div>
   </div>
 
@@ -327,17 +276,17 @@
 
       <div class="benefits-wrap">
         <div class="benefits-item">
-          <img src="/images/benefit-1.svg" alt="">
+          <img src="<?php echo get_template_directory_uri() ?>/images/benefit-1.svg" alt="">
           <span class="capt">Гарантия</span>
           <span class="desc">Безукоризненно выполняем взятые на себя обязательства, гарантируя внимательное отношение к потребностям клиента.</span>
         </div>
         <div class="benefits-item">
-          <img src="/images/benefit-2.svg" alt="">
+          <img src="<?php echo get_template_directory_uri() ?>/images/benefit-2.svg" alt="">
           <span class="capt">Экспертность</span>
           <span class="desc">Мы гордимся тем, что возносим инфраструктуру заказчика на более высокий уровень эффективности, благодаря внедрению наших решений.</span>
         </div>
         <div class="benefits-item">
-          <img src="/images/benefit-3.svg" alt="">
+          <img src="<?php echo get_template_directory_uri() ?>/images/benefit-3.svg" alt="">
           <span class="capt">Поддержка</span>
           <span class="desc">Сопровождаем наших клиентов на всех этапах сотрудничества,  бесплатный выезд инженера и проведение аудита,строгое соблюдение сроков.</span>
         </div>
@@ -360,30 +309,30 @@
               <div class="swiper-slide">
                 <div class="partners-slider-wrap">
                   <div class="partners-slider-item">
-                    <img src="/images/partners/partner-1.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/partners/partner-1.png" alt="">
                   </div>
                   <div class="partners-slider-item">
-                    <img src="/images/partners/partner-2.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="partners-slider-wrap">
-                  <div class="partners-slider-item">
-                    <img src="/images/partners/partner-2.png" alt="">
-                  </div>
-                  <div class="partners-slider-item">
-                    <img src="/images/partners/partner-1.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/partners/partner-2.png" alt="">
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="partners-slider-wrap">
                   <div class="partners-slider-item">
-                    <img src="/images/partners/partner-1.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/partners/partner-2.png" alt="">
                   </div>
                   <div class="partners-slider-item">
-                    <img src="/images/partners/partner-2.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/partners/partner-1.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="partners-slider-wrap">
+                  <div class="partners-slider-item">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/partners/partner-1.png" alt="">
+                  </div>
+                  <div class="partners-slider-item">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/partners/partner-2.png" alt="">
                   </div>
                 </div>
               </div>
@@ -404,11 +353,11 @@
         <div class="contacts-info">
           <div>
             <span>Служба поддержки:</span>
-            <a class="contacts-tel" href="tel:8 800 333-45-45">8 800 333-45-45 <span><img src="/images/viber.svg" alt=""></span> <span><img src="/images/whatsapp.svg" alt=""></span></a>
-            <a href="mailto:info@esbgroup.ge">info@esbgroup.ge</a>
+            <a class="contacts-tel" href="tel:<?php echo carbon_get_theme_option('phone_link') ?>"><?php echo carbon_get_theme_option('phone_text') ?> <span><img src="<?php echo get_template_directory_uri() ?>/images/viber.svg" alt=""></span> <span><img src="<?php echo get_template_directory_uri() ?>/images/whatsapp.svg" alt=""></span></a>
+            <a href="mailto:<?php echo carbon_get_theme_option('mail') ?>"><?php echo carbon_get_theme_option('mail') ?></a>
           </div>
           <div>
-            <a href="#">Юридический адрес<br/> 6 Ioane Petritsi St, Tbilisi<br/> №495859900408940</a>
+            <a href="#"><?php echo carbon_get_theme_option('address') ?></a>
           </div>
         </div>
       </div>
@@ -418,18 +367,17 @@
   </div>
     <div class="bot-line">
       <div class="container">
-        <span>ESB GROUP<br/> International Company. © Все права защищены. </span>
+        <span><?php echo carbon_get_theme_option('copyright') ?></span>
       </div>
     </div>
   </footer>
 
-  <script src="/js/swiper.min.js"></script>
+  <script src="<?php echo get_template_directory_uri() ?>/js/swiper.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function(){
 
       const body = document.querySelector('body');
 
-      // MODAL CUSTOM
       const modal = document.querySelector('.modal'),
             modalBtn = document.querySelectorAll('.modal-btn'),
             modalClose = document.querySelector('.modal .close');
@@ -445,26 +393,6 @@
         modal.classList.remove('active');
         body.classList.remove('off');
       })
-
-      // SMOOTH SCROLL
-      function scrollTo(element) {
-        window.scroll({
-          behavior: 'smooth',
-          left: 0,
-          top: element.offsetTop - currentHeaderHeight
-        });
-      }
-
-      document.querySelectorAll('nav a').forEach(el => el.addEventListener('click', function(e) {
-        e.preventDefault();
-        scrollTo(document.getElementById(`${el.href.split('#')[1]}`));
-        MobileMenu.classList.remove('active');
-        body.classList.remove('off');
-      }))
-
-      // document.getElementById("button").addEventListener('click', () => {
-      //   scrollTo(document.getElementById("8"));
-      // });
       
 
       // MOBILE MENU
@@ -551,13 +479,11 @@
 
       // MAIN VIDEO SCRIPTS
       const videoMain = document.querySelector('.main-video');
-      let currentHeaderHeight = 0;
 
       function dynamicHeaderPadding() {
         let headerHeightDes = document.querySelector('header.desktop').offsetHeight;
         let headerHeightMob = document.querySelector('header.mobile').offsetHeight;
-        window.innerWidth <= 640 ? currentHeaderHeight = headerHeightMob : currentHeaderHeight = headerHeightDes;
-        videoMain.style.paddingTop = `${currentHeaderHeight}px`;
+        window.innerWidth <= 640 ? videoMain.style.paddingTop = `${headerHeightMob}px` : videoMain.style.paddingTop = `${headerHeightDes}px`
       }
       dynamicHeaderPadding();
           
@@ -572,27 +498,32 @@
       // })
 
       // SLIDER PROJECTS
-      var swiperProjectsThumbs = new Swiper(".swiper-projects-thumbs", {
+      var swiperProjectsMain = new Swiper('.swiper-projects-main', {
         spaceBetween: 0,
-        loop: false,
-        slidesPerView: "auto",
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+        loopedSlides: 4,
+        navigation: false
+      });
+      var swiperProjectsThumbs = new Swiper('.swiper-projects-thumbs', {
+        spaceBetween: 0,
+        centeredSlides: true,
+        slidesPerView: 'auto',
         touchRatio: 0.2,
         slideToClickedSlide: true,
+        loop: true,
+        loopedSlides: 4,
         navigation: false,
         scrollbar: {
           el: '.swiper-scrollbar',
           draggable: true,
         },
       });
-      var swiperProjectsMain = new Swiper(".swiper-projects-main", {
-        spaceBetween: 50,
-        loop: false,
-        slidesPerView: 1,
-        navigation: false,
-        thumbs: {
-          swiper: swiperProjectsThumbs,
-        },
-      });
+      swiperProjectsMain.controller.control = swiperProjectsThumbs;
+      swiperProjectsThumbs.controller.control = swiperProjectsMain;
 
       document.querySelectorAll('.project-item-wrap').forEach(el => {
         const swiperProjectsInner = new Swiper(el.querySelector('.swiper-projects-inner'), {
