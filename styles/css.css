@@ -331,7 +331,6 @@ header.mobile {
   display: block;
   position: absolute;
   right: 0;
-  background: red!important;
 }
 .about-block::before {
   width: 22.645vw;
