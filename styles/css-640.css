@@ -408,6 +408,10 @@
     margin: 0;
   }
 
+  .swiper-projects-inner  {
+    width: 100%;
+  }
+
   .swiper-projects-inner .swiper-button-prev, .swiper-projects-inner .swiper-button-next {
     width: 4.267vw;
     height: 4.267vw;
@@ -423,6 +427,7 @@
   .swiper-projects-thumbs { 
     position: absolute;
     top: 88vw;
+    margin: 2vw 0 6vw 0;
   }
 
   .swiper-projects-thumbs .swiper-slide > img:nth-child(1) {

@@ -104,6 +104,9 @@ body.off {
   padding: 0.781vw 2.083vw 0.781vw 3.125vw;
   outline: none;
 }
+.modal form .label-content input::placeholder {
+  color: rgba(255,255,255,.5)
+}
 
 .modal form label:nth-child(1) {
   margin: 0 0 1.042vw 0;
@@ -549,8 +552,11 @@ header.mobile {
   margin: 0 0 0.997vw 0;
 }
 
+.swiper-projects-inner {
+  width: 43.229vw;
+}
 .swiper-projects-inner .swiper-slide {
-  height: 500px;
+  height: 26.042vw;
 }
 
 .swiper-projects-inner .swiper-slide img {
@@ -569,6 +575,7 @@ header.mobile {
   height: 1.359vw;
   background: center center / 1.359vw auto no-repeat url("/images/slider-arrow.svg");
   transition: .3s opacity;
+  margin: 0;
 }
 .swiper-projects-inner .swiper-button-prev {
   transform: rotate(180deg);
@@ -790,10 +797,10 @@ header.mobile {
   position: relative;
 }
 
-.about-company-block.visible .left-side {
+.about-company-block .left-side.visible {
   transform: translateX(-13.5vw);
 }
-.about-company-block.visible .right-side {
+.about-company-block .right-side.visible {
   transform: translateX(0);
 }
 
