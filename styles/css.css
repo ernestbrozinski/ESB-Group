@@ -90,8 +90,8 @@ body.off {
 .modal form .label-content {
   transform: skew(-15deg);
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(107.45px);
-  -webkit-backdrop-filter: blur(107.45px);
+  backdrop-filter: blur(107.45px) contrast(100%);
+  -webkit-backdrop-filter: blur(107.45px) contrast(100%);
 }
 
 .modal form .label-content input {
@@ -136,8 +136,8 @@ body.off {
   text-decoration: none;
   padding: 0.72vw 2.717vw;
   background: linear-gradient(72.94deg, #FF4C40 0.33%, #FDA141 67.12%);
-  backdrop-filter: blur(117.841px);
-  -webkit-backdrop-filter: blur(117.841px);
+  backdrop-filter: blur(117.841px) contrast(100%);
+  -webkit-backdrop-filter: blur(117.841px) contrast(100%);
   color: #F6F6F6;
   transform: skew(-15deg);
   transition: background .15s, color .15s;  
@@ -174,8 +174,8 @@ p {
 
 header.desktop {
   background: linear-gradient(269.33deg, #0957A5 -103.89%, rgba(158, 158, 158, 0) 135.53%);
-  backdrop-filter: blur(91.5274px);
-  -webkit-backdrop-filter: blur(91.5274px);
+  backdrop-filter: blur(91.5274px) contrast(100%);
+  -webkit-backdrop-filter: blur(91.5274px) contrast(100%);
   position: fixed;
   top: 0;
   left: 0;
@@ -235,8 +235,8 @@ header.mobile {
 
 .lang-dropdown-wrap {
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(73.438px);
-  -webkit-backdrop-filter: blur(73.438px);
+  backdrop-filter: blur(73.438px) contrast(100%);
+  -webkit-backdrop-filter: blur(73.438px) contrast(100%);
   transform: skew(-15deg);
   margin: 0 0 0 0.453vw;
   position: relative;
@@ -405,8 +405,8 @@ header.mobile {
   font-family: 'ubuntu-bold', sans-serif;
   position: relative;
   background: #ddebfd;
-  backdrop-filter: blur(86.244px);
-  -webkit-backdrop-filter:  blur(86.244px);
+  backdrop-filter: blur(86.244px) contrast(100%);
+  -webkit-backdrop-filter:  blur(86.244px) contrast(100%);
   padding: 0 2.717vw;
   cursor: pointer;
   transition: .3s transform, .3s background
@@ -444,8 +444,8 @@ header.mobile {
 
 .tabs .tab.active {
   background: linear-gradient(69.59deg, #023497 -6.42%, #19AEC6 97.41%, #595959 158.84%);
-  backdrop-filter: blur(98.676px);
-  -webkit-backdrop-filter: blur(98.676px);
+  backdrop-filter: blur(98.676px) contrast(100%);
+  -webkit-backdrop-filter: blur(98.676px) contrast(100%);
   color: #fff;
   transform: translateX(-1.13vw);
 }
@@ -582,7 +582,7 @@ header.mobile {
   background: center center / 1.359vw auto no-repeat url("/images/slider-arrow.svg");
   transition: .3s opacity;
   margin: 0;
-  z-index: 99;
+  z-index: 999;
 }
 .swiper-projects-inner .swiper-button-prev {
   transform: rotate(180deg);
@@ -783,8 +783,8 @@ header.mobile {
 
 .about-company-block {
   background: linear-gradient(58.19deg, #023497 4.1%, #19AEC6 91.37%, #595959 100.2%);
-  backdrop-filter: blur(96.401px);
-  -webkit-backdrop-filter: blur(96.401px);
+  backdrop-filter: blur(96.401px) contrast(100%);
+  -webkit-backdrop-filter: blur(96.401px) contrast(100%);
   position: relative;
   overflow: hidden;
 }
@@ -917,8 +917,8 @@ header.mobile {
 }
 .benefits-item:nth-child(2) {
   background: linear-gradient(to right, #FF4C40, #FDA141);
-  backdrop-filter: blur(96.401px);
-  -webkit-backdrop-filter: blur(96.401px);
+  backdrop-filter: blur(96.401px) contrast(100%);
+  -webkit-backdrop-filter: blur(96.401px) contrast(100%);
   width: 31.703vw;
   height: 27.174vw;
   flex: none;
@@ -1139,8 +1139,8 @@ footer .bot-line {
   left: 0;
   width: 100%;
   background: linear-gradient(265.32deg, rgba(166, 166, 166, 0.75) 3.78%, rgba(220, 220, 220, 0) 115.75%);
-  backdrop-filter: blur(96.401px);
-  -webkit-backdrop-filter: blur(96.401px);
+  backdrop-filter: blur(96.401px) contrast(100%);
+  -webkit-backdrop-filter: blur(96.401px) contrast(100%);
   z-index: 10;
   font-size: 0.906vw;
   line-height: 1.25;
