@@ -9,6 +9,7 @@
     transform: translateX(101vw);
     transition: .3s transform;
     padding: 21.333vw 0;
+    overflow-y: scroll;
   }
   .modal.active {
     transform: translateX(0)
@@ -129,11 +130,12 @@
     padding: 21.333vw 0;
     background: linear-gradient(269.33deg, #0957A5 -103.89%, rgba(158, 158, 158, 1) 135.53%);
     filter: drop-shadow(0px 3.66109px 10.9833px rgba(80, 112, 215, 1));
-    overflow-y: auto;
+    overflow-y: scroll;
   }
 
   #mobile-menu .btn {
     margin: 0 0 2.667vw 0;
+    white-space: nowrap;
   }
 
   #mob-menu-close {
