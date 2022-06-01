@@ -793,15 +793,17 @@ header.mobile {
 
 .about-company-block .container {
   display: flex;
+  justify-content: space-between;
   color: #fff;
   position: relative;
+  width: 100%;
 }
 
-.about-company-block .left-side.visible {
-  transform: translateX(-13.5vw);
-}
-.about-company-block .right-side.visible {
+.about-company-block .left-side.visible .text-wrap {
   transform: translateX(0);
+}
+.about-company-block .right-side.visible .text-wrap {
+  transform: translateX(-12vw);
 }
 
 .about-company-block .left-side {
@@ -810,8 +812,6 @@ header.mobile {
   flex: none;
   width: 48.813vw;
   height: 48.46vw;
-  transform: translateX(-43.478vw);
-  transition: 1s transform;
   background: top center / 48.813vw auto no-repeat url("/images/rectangle-1.svg");
 }
 
@@ -819,6 +819,8 @@ header.mobile {
   width: 19.565vw;
   margin: 2.261vw 0 0 13.4vw;
   padding: 4.529vw 0 0 0;
+  transform: translateX(-100vw);
+  transition: 1s transform;
 }
 
 .about-company-block .left-side .capt b {
@@ -844,9 +846,7 @@ header.mobile {
   display: flex;
   flex-direction: column;
   padding: 11.322vw 0 0 0;
-  margin: 0 0 0 -10.261vw;
-  transform: translateX(43.478vw);
-  transition: 1s transform;
+  margin: 0;
 }
 
 .about-company-block .right-side .capt {
@@ -864,11 +864,16 @@ header.mobile {
   font-family: "sourcesanspro-regular", sans-serif;
 }
 
+.about-company-block .right-side .text-wrap {  
+  transform: translateX(100vw);
+  transition: 1s transform;
+}
+
 .about-company-block .logo {
   position: absolute;
   width: 3.985vw;
   height: auto;
-  right: 4.982vw;
+  right: 12.982vw;
   bottom: 2.717vw
 }
 

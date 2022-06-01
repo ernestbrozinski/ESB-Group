@@ -451,25 +451,22 @@
     padding: 0 0 56vw 0
   }
 
-  .about-company-block .container {
-    width: 88vw;
-  }
-
   .about-company-block .left-side {
     order: 2;
     position: absolute;
     top: 43.333vw;
+    left: 0;
     width: 100vw;
     height: 150.667vw;
-  }
-
-  .about-company-block .left-side {
     background-size: 100vw;
-    background-image: url("/images/rectangle-1-mob.svg")
+    background-image: url("/images/rectangle-1-mob.svg");
   }
 
-  .about-company-block.visible .left-side {
-    transform: translateX(-12vw);
+  .about-company-block .left-side.visible .text-wrap {
+    transform: translateX(0);
+  }
+  .about-company-block .right-side.visible .text-wrap {
+    transform: translateX(0);
   }
 
   .about-company-block .left-side .text-wrap {
