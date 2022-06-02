@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri() ?>/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri() ?><?php echo get_template_directory_uri() ?>/images/favicon.ico">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/styles/swiper.min.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/styles/css.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/styles/css-640.css">
@@ -18,13 +18,13 @@
       <label>
         <span>Имя</span>
         <div class="label-content">
-          <input type="text">
+          <input type="text" placeholder="Гурам Беридзе">
         </div>
       </label>
       <label>
         <span>Телефон</span>
         <div class="label-content">
-          <input type="text">
+          <input id="tel" type="text" placeholder="(+995) 123 45-67-89">
         </div>
       </label>
       <a href="#" class="btn">
@@ -124,17 +124,67 @@
               <div class="video-preview">
                 <img src="<?php echo get_template_directory_uri() ?>/images/video-preview.png" alt="">
               </div>
-              <video  preload="auto" controls>
-                <source src="<?php echo get_template_directory_uri() ?>/video/video.mp4" type="video/mp4">
+              <video preload="auto" controls>
+                <source src="<?php echo get_template_directory_uri() ?>/video/video.webm" type="video/mp4">
               </video>
             </div>
             <span class="tab-info">Электронная система безопасности (ЭСБ) - совокупность технических устройств, включающая радиотехнические, электронно-оптические, электронно-вычислительные и другие устройства, а также оператора, и выполняющая определенные функции по обеспечению безопасности объекта, процесса его работы и персонала, территорий</span>
           </div>
-          <div class="tab-content">Content 2</div>
-          <div class="tab-content">Content 3</div>
-          <div class="tab-content">Content 4</div>
-          <div class="tab-content">Content 5</div>
-          <div class="tab-content">Content 6</div>
+          <div class="tab-content">
+            <div class="video-wrap">
+              <div class="video-preview">
+                <img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" alt="">
+              </div>
+              <video preload="auto" controls>
+                <source src="<?php echo get_template_directory_uri() ?>/video/video.webm" type="video/mp4">
+              </video>
+            </div>
+            <span class="tab-info">2 Электронная система безопасности (ЭСБ) - совокупность технических устройств, включающая радиотехнические, электронно-оптические, электронно-вычислительные и другие устройства, а также оператора, и выполняющая определенные функции по обеспечению безопасности объекта, процесса его работы и персонала, территорий</span>
+          </div>
+          <div class="tab-content">
+            <div class="video-wrap">
+              <div class="video-preview">
+                <img src="<?php echo get_template_directory_uri() ?>/images/projects/project2.jpeg" alt="">
+              </div>
+              <video preload="auto" controls>
+                <source src="<?php echo get_template_directory_uri() ?>/video/video.webm" type="video/mp4">
+              </video>
+            </div>
+            <span class="tab-info">3 Электронная система безопасности (ЭСБ) - совокупность технических устройств, включающая радиотехнические, электронно-оптические, электронно-вычислительные и другие устройства, а также оператора, и выполняющая определенные функции по обеспечению безопасности объекта, процесса его работы и персонала, территорий</span>
+          </div>
+          <div class="tab-content">
+            <div class="video-wrap">
+              <div class="video-preview">
+                <img src="<?php echo get_template_directory_uri() ?>/images/projects/project3.jpeg" alt="">
+              </div>
+              <video preload="auto" controls>
+                <source src="<?php echo get_template_directory_uri() ?>/video/video.webm" type="video/mp4">
+              </video>
+            </div>
+            <span class="tab-info">4 Электронная система безопасности (ЭСБ) - совокупность технических устройств, включающая радиотехнические, электронно-оптические, электронно-вычислительные и другие устройства, а также оператора, и выполняющая определенные функции по обеспечению безопасности объекта, процесса его работы и персонала, территорий</span>
+          </div>
+          <div class="tab-content">
+            <div class="video-wrap">
+              <div class="video-preview">
+                <img src="<?php echo get_template_directory_uri() ?>/images/projects/project4.jpeg" alt="">
+              </div>
+              <video preload="auto" controls>
+                <source src="<?php echo get_template_directory_uri() ?>/video/video.webm" type="video/mp4">
+              </video>
+            </div>
+            <span class="tab-info">5 Электронная система безопасности (ЭСБ) - совокупность технических устройств, включающая радиотехнические, электронно-оптические, электронно-вычислительные и другие устройства, а также оператора, и выполняющая определенные функции по обеспечению безопасности объекта, процесса его работы и персонала, территорий</span>
+          </div>
+          <div class="tab-content">
+            <div class="video-wrap">
+              <div class="video-preview">
+                <img src="<?php echo get_template_directory_uri() ?>/images/projects/project5.jpeg" alt="">
+              </div>
+              <video preload="auto" controls>
+                <source src="<?php echo get_template_directory_uri() ?>/video/video.webm" type="video/mp4">
+              </video>
+            </div>
+            <span class="tab-info">6 Электронная система безопасности (ЭСБ) - совокупность технических устройств, включающая радиотехнические, электронно-оптические, электронно-вычислительные и другие устройства, а также оператора, и выполняющая определенные функции по обеспечению безопасности объекта, процесса его работы и персонала, территорий</span>
+          </div>
         </div>
       </div>
     </div>
@@ -147,13 +197,14 @@
       <div class="swiper swiper-projects-main">
         
         <div class="swiper-wrapper">
+          
           <div class="swiper-slide">
             <div class="project-item-wrap">
 
               <div class="swiper swiper-projects-inner">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" alt=""></div>
-                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project2.jpeg" alt=""></div>
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
@@ -178,8 +229,164 @@
 
               <div class="swiper swiper-projects-inner">
                 <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project3.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project4.jpeg" alt=""></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+              <div class="project-item-content">
+                <span class="project-item-title">Установка пожарной системы в БЦ Олимп 2</span>
+                <span class="project-item-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                <ul class="project-info-list">
+                  <li><span>Площадь объекта:</span><span>3450 m<sup>2</sup></span></li>
+                  <li><span>Срок выполнения:</span><span>12 дней</span></li>
+                </ul>
+                <a href="#" class="btn-recomend" download><span>Рекомендательное письмо <img src="<?php echo get_template_directory_uri() ?>/images/circle-arrow-right.svg" alt=""></span></a>
+                <a href="#" class="btn"><span>Оставить заявку</span></a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="project-item-wrap">
+
+              <div class="swiper swiper-projects-inner">
+                <div class="swiper-wrapper">
                   <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" alt=""></div>
                   <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" alt=""></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+              <div class="project-item-content">
+                <span class="project-item-title">Установка пожарной системы в БЦ Олимп 3</span>
+                <span class="project-item-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                <ul class="project-info-list">
+                  <li><span>Площадь объекта:</span><span>3450 m<sup>2</sup></span></li>
+                  <li><span>Срок выполнения:</span><span>12 дней</span></li>
+                </ul>
+                <a href="#" class="btn-recomend" download><span>Рекомендательное письмо <img src="<?php echo get_template_directory_uri() ?>/images/circle-arrow-right.svg" alt=""></span></a>
+                <a href="#" class="btn"><span>Оставить заявку</span></a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="project-item-wrap">
+
+              <div class="swiper swiper-projects-inner">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project2.jpeg" alt=""></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+              <div class="project-item-content">
+                <span class="project-item-title">Установка пожарной системы в БЦ Олимп</span>
+                <span class="project-item-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                <ul class="project-info-list">
+                  <li><span>Площадь объекта:</span><span>3450 m<sup>2</sup></span></li>
+                  <li><span>Срок выполнения:</span><span>12 дней</span></li>
+                </ul>
+                <a href="#" class="btn-recomend" download><span>Рекомендательное письмо <img src="<?php echo get_template_directory_uri() ?>/images/circle-arrow-right.svg" alt=""></span></a>
+                <a href="#" class="btn"><span>Оставить заявку</span></a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="project-item-wrap">
+
+              <div class="swiper swiper-projects-inner">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project3.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project4.jpeg" alt=""></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+              <div class="project-item-content">
+                <span class="project-item-title">Установка пожарной системы в БЦ Олимп 2</span>
+                <span class="project-item-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                <ul class="project-info-list">
+                  <li><span>Площадь объекта:</span><span>3450 m<sup>2</sup></span></li>
+                  <li><span>Срок выполнения:</span><span>12 дней</span></li>
+                </ul>
+                <a href="#" class="btn-recomend" download><span>Рекомендательное письмо <img src="<?php echo get_template_directory_uri() ?>/images/circle-arrow-right.svg" alt=""></span></a>
+                <a href="#" class="btn"><span>Оставить заявку</span></a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="project-item-wrap">
+
+              <div class="swiper swiper-projects-inner">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" alt=""></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+              <div class="project-item-content">
+                <span class="project-item-title">Установка пожарной системы в БЦ Олимп 3</span>
+                <span class="project-item-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                <ul class="project-info-list">
+                  <li><span>Площадь объекта:</span><span>3450 m<sup>2</sup></span></li>
+                  <li><span>Срок выполнения:</span><span>12 дней</span></li>
+                </ul>
+                <a href="#" class="btn-recomend" download><span>Рекомендательное письмо <img src="<?php echo get_template_directory_uri() ?>/images/circle-arrow-right.svg" alt=""></span></a>
+                <a href="#" class="btn"><span>Оставить заявку</span></a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="project-item-wrap">
+
+              <div class="swiper swiper-projects-inner">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project2.jpeg" alt=""></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+              <div class="project-item-content">
+                <span class="project-item-title">Установка пожарной системы в БЦ Олимп</span>
+                <span class="project-item-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                <ul class="project-info-list">
+                  <li><span>Площадь объекта:</span><span>3450 m<sup>2</sup></span></li>
+                  <li><span>Срок выполнения:</span><span>12 дней</span></li>
+                </ul>
+                <a href="#" class="btn-recomend" download><span>Рекомендательное письмо <img src="<?php echo get_template_directory_uri() ?>/images/circle-arrow-right.svg" alt=""></span></a>
+                <a href="#" class="btn"><span>Оставить заявку</span></a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="project-item-wrap">
+
+              <div class="swiper swiper-projects-inner">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project3.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/images/projects/project4.jpeg" alt=""></div>
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
@@ -236,11 +443,35 @@
             <img src="<?php echo get_template_directory_uri() ?>/images/projects/project-icon-1.svg" alt="">
           </div>
           <div class="swiper-slide">
-            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project3.jpeg" />
             <img src="<?php echo get_template_directory_uri() ?>/images/projects/project-icon-2.svg" alt="">
           </div>
           <div class="swiper-slide">
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project5.jpeg" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project-icon-3.svg" alt="">
+          </div>
+          <div class="swiper-slide">
             <img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project-icon-1.svg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project3.jpeg" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project-icon-2.svg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project5.jpeg" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project-icon-3.svg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project1.jpeg" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project-icon-1.svg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project3.jpeg" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project-icon-2.svg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="<?php echo get_template_directory_uri() ?>/images/projects/project5.jpeg" />
             <img src="<?php echo get_template_directory_uri() ?>/images/projects/project-icon-3.svg" alt="">
           </div>
         </div>
@@ -353,11 +584,11 @@
         <div class="contacts-info">
           <div>
             <span>Служба поддержки:</span>
-            <a class="contacts-tel" href="tel:<?php echo carbon_get_theme_option('phone_link') ?>"><?php echo carbon_get_theme_option('phone_text') ?> <span><img src="<?php echo get_template_directory_uri() ?>/images/viber.svg" alt=""></span> <span><img src="<?php echo get_template_directory_uri() ?>/images/whatsapp.svg" alt=""></span></a>
-            <a href="mailto:<?php echo carbon_get_theme_option('mail') ?>"><?php echo carbon_get_theme_option('mail') ?></a>
+            <a class="contacts-tel" href="tel:8 800 333-45-45">8 800 333-45-45 <span><img src="<?php echo get_template_directory_uri() ?>/images/viber.svg" alt=""></span> <span><img src="<?php echo get_template_directory_uri() ?>/images/whatsapp.svg" alt=""></span></a>
+            <a href="mailto:info@esbgroup.ge">info@esbgroup.ge</a>
           </div>
           <div>
-            <a href="#"><?php echo carbon_get_theme_option('address') ?></a>
+            <a href="#">Юридический адрес<br/> 6 Ioane Petritsi St, Tbilisi<br/> №495859900408940</a>
           </div>
         </div>
       </div>
@@ -367,17 +598,25 @@
   </div>
     <div class="bot-line">
       <div class="container">
-        <span><?php echo carbon_get_theme_option('copyright') ?></span>
+        <span>ESB GROUP<br/> International Company. © Все права защищены. </span>
       </div>
     </div>
   </footer>
 
   <script src="<?php echo get_template_directory_uri() ?>/js/swiper.min.js"></script>
+  <script src="<?php echo get_template_directory_uri() ?>/js/inputmask.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function(){
 
       const body = document.querySelector('body');
 
+      var element = document.querySelector('#tel');
+      var maskOptions = {
+        mask: '{(+995)} 000 00-00-00'
+      };
+      var mask = IMask(element, maskOptions);
+
+      // MODAL CUSTOM
       const modal = document.querySelector('.modal'),
             modalBtn = document.querySelectorAll('.modal-btn'),
             modalClose = document.querySelector('.modal .close');
@@ -393,7 +632,24 @@
         modal.classList.remove('active');
         body.classList.remove('off');
       })
-      
+
+
+      // SMOOTH SCROLL
+      function scrollTo(element) {
+        window.scroll({
+          behavior: 'smooth',
+          left: 0,
+          top: element.offsetTop - currentHeaderHeight
+        });
+      }
+
+      document.querySelectorAll('nav a').forEach(el => el.addEventListener('click', function(e) {
+        e.preventDefault();
+        scrollTo(document.getElementById(`${el.href.split('#')[1]}`));
+        MobileMenu.classList.remove('active');
+        body.classList.remove('off');
+      }))
+
 
       // MOBILE MENU
       const MobMenuOpenBtn = document.querySelector('#btn-menu'),
@@ -415,6 +671,7 @@
       const langDropDownDes = document.querySelector('header.desktop .lang-dropdown'),
             langDropDownMob = document.querySelector('#mobile-menu .lang-dropdown');
 
+
       // CLICK OUTSIDE
       window.addEventListener('click', function(e){  
        
@@ -434,7 +691,7 @@
 
       const options = {
         root: null,
-        rootMargin: "500px",
+        rootMargin: "1150px",
         threshold: 1,
       };
   
@@ -442,10 +699,14 @@
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible");
           }
         });
       }, options);
-      observer.observe(document.querySelector(".about-company-block"));
+      observer.observe(document.querySelector(".about-company-block .left-side"));
+      observer.observe(document.querySelector(".about-company-block .right-side"));
+
 
       //TABS
       const tabs = document.querySelectorAll('.tabs .tab'),
@@ -457,9 +718,12 @@
           tabsContent.forEach(el => el.classList.remove('active'))
           this.classList.add('active');
           tabsContent[i].classList.add('active');
+          document.querySelectorAll('.tab-content .video-wrap').forEach(el => el.classList.remove('off'));
+          document.querySelectorAll('.tab-content .video-wrap video').forEach(el => el.pause());
         })
       })
       tabs[0].click();
+
 
       //TABS ADDITIONAL STYLE
       function checkTabHeight() {
@@ -477,57 +741,65 @@
         dynamicHeaderPadding()
       });
 
+
       // MAIN VIDEO SCRIPTS
       const videoMain = document.querySelector('.main-video');
+      let currentHeaderHeight = 0;
 
       function dynamicHeaderPadding() {
         let headerHeightDes = document.querySelector('header.desktop').offsetHeight;
         let headerHeightMob = document.querySelector('header.mobile').offsetHeight;
-        window.innerWidth <= 640 ? videoMain.style.paddingTop = `${headerHeightMob}px` : videoMain.style.paddingTop = `${headerHeightDes}px`
+        window.innerWidth <= 640 ? currentHeaderHeight = headerHeightMob : currentHeaderHeight = headerHeightDes;
+        videoMain.style.paddingTop = `${currentHeaderHeight}px`;
       }
       dynamicHeaderPadding();
           
 
       // TAB VIDEO SCRIPTS
-      const videoWrap = document.querySelectorAll('.video-preview');
+      const videoWrap = document.querySelectorAll('.tab-content .video-wrap'),
+            videos    = document.querySelectorAll('.tab-content .video-wrap video');
 
-      // videoWrap.forEach((el) => {
-      //   el.addEventListener('click', function() {
+      videoWrap.forEach((el, i) => {
+        el.addEventListener('click', function(e) {
+          e.preventDefault();
+          this.classList.add('off');
+          videos[i].play();
+        })
+      })
 
-      //   })
-      // })
 
-      // SLIDER PROJECTS
-      var swiperProjectsMain = new Swiper('.swiper-projects-main', {
+      // SLIDERS
+      var swiperProjectsThumbs = new Swiper(".swiper-projects-thumbs", {
         spaceBetween: 0,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        loop: true,
-        loopedSlides: 4,
-        navigation: false
-      });
-      var swiperProjectsThumbs = new Swiper('.swiper-projects-thumbs', {
-        spaceBetween: 0,
-        centeredSlides: true,
-        slidesPerView: 'auto',
+        loop: false,
+        slidesPerView: "auto",
         touchRatio: 0.2,
         slideToClickedSlide: true,
-        loop: true,
-        loopedSlides: 4,
         navigation: false,
         scrollbar: {
           el: '.swiper-scrollbar',
           draggable: true,
+          mousewheel: true
         },
       });
-      swiperProjectsMain.controller.control = swiperProjectsThumbs;
-      swiperProjectsThumbs.controller.control = swiperProjectsMain;
+      var swiperProjectsMain = new Swiper(".swiper-projects-main", {
+        spaceBetween: 50,
+        loop: false,
+        slidesPerView: 1,
+        navigation: false,
+        thumbs: {
+          swiper: swiperProjectsThumbs,
+        },
+      });
 
       document.querySelectorAll('.project-item-wrap').forEach(el => {
         const swiperProjectsInner = new Swiper(el.querySelector('.swiper-projects-inner'), {
           loop: true,
+          effect: 'cube',
+          cubeEffect: {
+            slideShadows: false,
+            shadow: false,
+          },
           navigation: {
             nextEl: el.querySelector('.swiper-button-next'),
             prevEl: el.querySelector('.swiper-button-prev'),

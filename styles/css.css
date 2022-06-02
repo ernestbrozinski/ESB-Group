@@ -24,6 +24,13 @@ body.off {
   overflow: hidden;
 }
 
+.h-des {
+  display: none;
+}
+.tc {
+  text-align: center;
+}
+
 .swiper-container {
   box-sizing: border-box;
   width: 100%;
@@ -442,12 +449,23 @@ header.mobile {
   margin: 0 0 0.906vw 0;
 }
 
+@keyframes tab {
+  50% {
+    transform: translateX(-2.13vw);
+  }
+  90% {
+    transform: translateX(-1.13vw);
+  }
+}
+
 .tabs .tab.active {
   background: linear-gradient(69.59deg, #023497 -6.42%, #19AEC6 97.41%, #595959 158.84%);
   backdrop-filter: blur(98.676px) contrast(100%);
   -webkit-backdrop-filter: blur(98.676px) contrast(100%);
   color: #fff;
+  animation: 1s tab;
   transform: translateX(-1.13vw);
+  
 }
 .tabs .tab.active::before {
   height: 0;
@@ -810,6 +828,11 @@ header.mobile {
   width: 100%;
 }
 
+.about-company-block .left-side .text-wrap,
+.about-company-block .right-side .text-wrap {
+  transition: 1.5s transform;
+}
+
 .about-company-block .left-side.visible .text-wrap {
   transform: translateX(0);
 }
@@ -823,15 +846,15 @@ header.mobile {
   flex: none;
   width: 48.813vw;
   height: 48.46vw;
-  background: top center / 48.813vw auto no-repeat url("/images/rectangle-1.svg");
 }
 
 .about-company-block .left-side .text-wrap {
   width: 19.565vw;
-  margin: 2.261vw 0 0 13.4vw;
-  padding: 4.529vw 0 0 0;
+  padding: 6.79vw 12vw 0 13.4vw;
   transform: translateX(-100vw);
-  transition: 1s transform;
+  width: 48.813vw;
+  height: 48.46vw;
+  background: top center / 48.813vw auto no-repeat url("/images/rectangle-1.svg");
 }
 
 .about-company-block .left-side .capt b {
@@ -876,8 +899,7 @@ header.mobile {
 }
 
 .about-company-block .right-side .text-wrap {  
-  transform: translateX(100vw);
-  transition: 1s transform;
+  transform: translateX(112vw);
 }
 
 .about-company-block .logo {
@@ -912,11 +934,10 @@ header.mobile {
   width: 25.363vw;
   height: 21.826vw;
   background: linear-gradient(to right, #023497, #19AEC6);
-  transition: .3s width, .3s height, .3s margin-top, .3s transform
+  transition: .3s width, .3s height, .3s margin-top, .6s transform
 }
-.benefits-item:hover {
+.benefits-item:nth-child(2):hover {
   transform: scale(1.05);
-  z-index: 9;
 }
 .benefits-item:nth-child(2) {
   background: linear-gradient(to right, #FF4C40, #FDA141);
@@ -925,6 +946,7 @@ header.mobile {
   width: 31.703vw;
   height: 27.174vw;
   flex: none;
+  z-index: 9;
 }
 .benefits-item:nth-child(2) img {
   max-width: 7.246vw!important;
@@ -932,6 +954,16 @@ header.mobile {
 }
 .benefits-item:nth-child(2) .desc {
   transform: scale(1.15) translateY(0.678vw)!important
+}
+
+.benefits-item:nth-child(1) {
+  transform: translateX(30vw);
+}
+.benefits-item:nth-child(3) {
+  transform: translateX(-30vw);
+}
+.benefits-item.visible {
+  transform: translateX(0);
 }
 
 .benefits-item img {
