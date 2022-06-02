@@ -478,6 +478,9 @@ header.mobile {
   position: relative;
   min-height: 27.853vw;
 }
+.tabs-wrap .video-wrap.off .video-preview {
+  display: none;
+}
 
 .tabs-wrap .video-wrap video {
   width: 100%;

@@ -24,7 +24,7 @@
       <label>
         <span>Телефон</span>
         <div class="label-content">
-          <input type="text" placeholder="(+995) 123 45 67 89">
+          <input id="tel" type="text" placeholder="(+995) 123 45-67-89">
         </div>
       </label>
       <a href="#" class="btn">
@@ -124,8 +124,8 @@
               <div class="video-preview">
                 <img src="/images/video-preview.png" alt="">
               </div>
-              <video  preload="auto" controls>
-                <source src="/video/video.mp4" type="video/mp4">
+              <video preload="auto" controls>
+                <source src="/video/video.webm" type="video/mp4">
               </video>
             </div>
             <span class="tab-info">Электронная система безопасности (ЭСБ) - совокупность технических устройств, включающая радиотехнические, электронно-оптические, электронно-вычислительные и другие устройства, а также оператора, и выполняющая определенные функции по обеспечению безопасности объекта, процесса его работы и персонала, территорий</span>
@@ -135,8 +135,8 @@
               <div class="video-preview">
                 <img src="/images/projects/project1.jpeg" alt="">
               </div>
-              <video  preload="auto" controls>
-                <source src="/video/video.mp4" type="video/mp4">
+              <video preload="auto" controls>
+                <source src="/video/video.webm" type="video/mp4">
               </video>
             </div>
             <span class="tab-info">2 Электронная система безопасности (ЭСБ) - совокупность технических устройств, включающая радиотехнические, электронно-оптические, электронно-вычислительные и другие устройства, а также оператора, и выполняющая определенные функции по обеспечению безопасности объекта, процесса его работы и персонала, территорий</span>
@@ -146,8 +146,8 @@
               <div class="video-preview">
                 <img src="/images/projects/project2.jpeg" alt="">
               </div>
-              <video  preload="auto" controls>
-                <source src="/video/video.mp4" type="video/mp4">
+              <video preload="auto" controls>
+                <source src="/video/video.webm" type="video/mp4">
               </video>
             </div>
             <span class="tab-info">3 Электронная система безопасности (ЭСБ) - совокупность технических устройств, включающая радиотехнические, электронно-оптические, электронно-вычислительные и другие устройства, а также оператора, и выполняющая определенные функции по обеспечению безопасности объекта, процесса его работы и персонала, территорий</span>
@@ -157,8 +157,8 @@
               <div class="video-preview">
                 <img src="/images/projects/project3.jpeg" alt="">
               </div>
-              <video  preload="auto" controls>
-                <source src="/video/video.mp4" type="video/mp4">
+              <video preload="auto" controls>
+                <source src="/video/video.webm" type="video/mp4">
               </video>
             </div>
             <span class="tab-info">4 Электронная система безопасности (ЭСБ) - совокупность технических устройств, включающая радиотехнические, электронно-оптические, электронно-вычислительные и другие устройства, а также оператора, и выполняющая определенные функции по обеспечению безопасности объекта, процесса его работы и персонала, территорий</span>
@@ -168,8 +168,8 @@
               <div class="video-preview">
                 <img src="/images/projects/project4.jpeg" alt="">
               </div>
-              <video  preload="auto" controls>
-                <source src="/video/video.mp4" type="video/mp4">
+              <video preload="auto" controls>
+                <source src="/video/video.webm" type="video/mp4">
               </video>
             </div>
             <span class="tab-info">5 Электронная система безопасности (ЭСБ) - совокупность технических устройств, включающая радиотехнические, электронно-оптические, электронно-вычислительные и другие устройства, а также оператора, и выполняющая определенные функции по обеспечению безопасности объекта, процесса его работы и персонала, территорий</span>
@@ -179,8 +179,8 @@
               <div class="video-preview">
                 <img src="/images/projects/project5.jpeg" alt="">
               </div>
-              <video  preload="auto" controls>
-                <source src="/video/video.mp4" type="video/mp4">
+              <video preload="auto" controls>
+                <source src="/video/video.webm" type="video/mp4">
               </video>
             </div>
             <span class="tab-info">6 Электронная система безопасности (ЭСБ) - совокупность технических устройств, включающая радиотехнические, электронно-оптические, электронно-вычислительные и другие устройства, а также оператора, и выполняющая определенные функции по обеспечению безопасности объекта, процесса его работы и персонала, территорий</span>
@@ -604,10 +604,17 @@
   </footer>
 
   <script src="/js/swiper.min.js"></script>
+  <script src="/js/inputmask.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function(){
 
       const body = document.querySelector('body');
+
+      var element = document.querySelector('#tel');
+      var maskOptions = {
+        mask: '{(+995)} 000 00-00-00'
+      };
+      var mask = IMask(element, maskOptions);
 
       // MODAL CUSTOM
       const modal = document.querySelector('.modal'),
@@ -626,6 +633,7 @@
         body.classList.remove('off');
       })
 
+
       // SMOOTH SCROLL
       function scrollTo(element) {
         window.scroll({
@@ -642,10 +650,6 @@
         body.classList.remove('off');
       }))
 
-      // document.getElementById("button").addEventListener('click', () => {
-      //   scrollTo(document.getElementById("8"));
-      // });
-      
 
       // MOBILE MENU
       const MobMenuOpenBtn = document.querySelector('#btn-menu'),
@@ -666,6 +670,7 @@
 
       const langDropDownDes = document.querySelector('header.desktop .lang-dropdown'),
             langDropDownMob = document.querySelector('#mobile-menu .lang-dropdown');
+
 
       // CLICK OUTSIDE
       window.addEventListener('click', function(e){  
@@ -702,6 +707,7 @@
       observer.observe(document.querySelector(".about-company-block .left-side"));
       observer.observe(document.querySelector(".about-company-block .right-side"));
 
+
       //TABS
       const tabs = document.querySelectorAll('.tabs .tab'),
             tabsContent = document.querySelectorAll('.tabs-content .tab-content');
@@ -712,9 +718,12 @@
           tabsContent.forEach(el => el.classList.remove('active'))
           this.classList.add('active');
           tabsContent[i].classList.add('active');
+          document.querySelectorAll('.tab-content .video-wrap').forEach(el => el.classList.remove('off'));
+          document.querySelectorAll('.tab-content .video-wrap video').forEach(el => el.pause());
         })
       })
       tabs[0].click();
+
 
       //TABS ADDITIONAL STYLE
       function checkTabHeight() {
@@ -732,6 +741,7 @@
         dynamicHeaderPadding()
       });
 
+
       // MAIN VIDEO SCRIPTS
       const videoMain = document.querySelector('.main-video');
       let currentHeaderHeight = 0;
@@ -746,15 +756,20 @@
           
 
       // TAB VIDEO SCRIPTS
-      const videoWrap = document.querySelectorAll('.video-preview');
+      const videoWrap = document.querySelectorAll('.tab-content .video-wrap'),
+            videos    = document.querySelectorAll('.tab-content .video-wrap video');
 
-      // videoWrap.forEach((el) => {
-      //   el.addEventListener('click', function() {
+      videoWrap.forEach((el, i) => {
+        el.addEventListener('click', function(e) {
+          e.preventDefault();
+          this.classList.add('off');
+          videos[i].play();
+          console.log(i)
+        })
+      })
 
-      //   })
-      // })
 
-      // SLIDER PROJECTS
+      // SLIDERS
       var swiperProjectsThumbs = new Swiper(".swiper-projects-thumbs", {
         spaceBetween: 0,
         loop: false,
