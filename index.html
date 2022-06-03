@@ -110,12 +110,24 @@
       <h4 class="block-caption gradient-text">Услуги</h4>
       <div class="tabs-wrap">
         <div class="tabs">
-          <span class="tab">Кондиционирование</span>
-          <span class="tab">Вентиляция</span>
-          <span class="tab">Электронные системы безопасности</span>
-          <span class="tab">Отопление</span>
-          <span class="tab">BMS. Система управления домом</span>
-          <span class="tab">Электронные системы безопасности</span>
+          <span class="tab">
+            <span>Кондиционирование</span>
+          </span>
+          <span class="tab">
+            <span>Вентиляция</span>
+          </span>
+          <span class="tab">
+            <span>Электронные системы безопасности</span>
+          </span>
+          <span class="tab">
+            <span>Отопление</span>
+          </span>
+          <span class="tab">
+            <span>BMS. Система управления домом</span>
+          </span>
+          <span class="tab">
+            <span>Электронные системы безопасности</span>
+          </span>
         </div>
 
         <div class="tabs-content">
@@ -124,7 +136,7 @@
               <div class="video-preview">
                 <img src="/images/video-preview.png" alt="">
               </div>
-              <video preload="auto" controls>
+              <video preload="auto"  no-controls>
                 <source src="/video/video.webm" type="video/mp4">
               </video>
             </div>
@@ -135,7 +147,7 @@
               <div class="video-preview">
                 <img src="/images/projects/project1.jpeg" alt="">
               </div>
-              <video preload="auto" controls>
+              <video preload="auto"  no-controls>
                 <source src="/video/video.webm" type="video/mp4">
               </video>
             </div>
@@ -146,7 +158,7 @@
               <div class="video-preview">
                 <img src="/images/projects/project2.jpeg" alt="">
               </div>
-              <video preload="auto" controls>
+              <video preload="auto"  no-controls>
                 <source src="/video/video.webm" type="video/mp4">
               </video>
             </div>
@@ -157,7 +169,7 @@
               <div class="video-preview">
                 <img src="/images/projects/project3.jpeg" alt="">
               </div>
-              <video preload="auto" controls>
+              <video preload="auto"  no-controls>
                 <source src="/video/video.webm" type="video/mp4">
               </video>
             </div>
@@ -168,7 +180,7 @@
               <div class="video-preview">
                 <img src="/images/projects/project4.jpeg" alt="">
               </div>
-              <video preload="auto" controls>
+              <video preload="auto"  no-controls>
                 <source src="/video/video.webm" type="video/mp4">
               </video>
             </div>
@@ -179,7 +191,7 @@
               <div class="video-preview">
                 <img src="/images/projects/project5.jpeg" alt="">
               </div>
-              <video preload="auto" controls>
+              <video preload="auto"  no-controls>
                 <source src="/video/video.webm" type="video/mp4">
               </video>
             </div>
@@ -695,20 +707,29 @@
         rootMargin: "450px",
         threshold: 1,
       };
+      const options2 = {
+        root: null,
+        rootMargin: "100px",
+        threshold: 1,
+      };
   
       const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("visible");
           } 
-          // else {
-          //   entry.target.classList.remove("visible");
-          // }
         });
       }, options);
+      const observer2 = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          } 
+        });
+      }, options2);
       observer.observe(document.querySelector(".about-company-block .left-side"));
       observer.observe(document.querySelector(".about-company-block .right-side"));
-      document.querySelectorAll(".benefits-item").forEach(el => observer.observe(el));
+      document.querySelectorAll(".benefits-item").forEach(el => observer2.observe(el));
 
 
       //TABS

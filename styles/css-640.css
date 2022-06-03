@@ -106,7 +106,6 @@
     backdrop-filter: blur(91.5274px);
     padding: 2.667vw 0;
     z-index: 99;
-    overflow: hidden;
   }
   header.mobile .container {
     display: flex;
@@ -236,10 +235,8 @@
     height: auto;
   }
 
-  .video-preview video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .video-preview.main-video {
+    height: 74.667vw;
   }
 
   .about-block {
