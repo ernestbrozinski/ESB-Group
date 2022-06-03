@@ -686,6 +686,17 @@
             langDropDownMob = document.querySelector('#mobile-menu .lang-dropdown');
 
 
+      // BENEFITS CLICK
+      const benefits = document.querySelectorAll('.benefits-wrap .benefits-item');
+
+      benefits.forEach(el => {
+        el.addEventListener('click', function(e) {
+          benefits.forEach(el => el.classList.remove('active'));
+          this.classList.add('active');
+        })
+      })
+      benefits[1].click();
+
       // CLICK OUTSIDE
       window.addEventListener('click', function(e){  
        

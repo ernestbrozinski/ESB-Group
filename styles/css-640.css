@@ -618,9 +618,18 @@
     width: 100%;
   }
 
+  .benefits-item {
+    background: linear-gradient(67.83deg, #023497 -55.16%, #19AEC6 95.94%, #595959 110.31%)!important;
+  }
+
   .benefits-item:hover {
+    transform: none!important;
+  }
+
+  .benefits-item.active {
+    background: linear-gradient(to right, #FF4C40, #FDA141)!important;
     transform: scale(1.05)!important;
-    transition: .3s transform
+    transition: .3s transform;
   }
 
   .benefits-item:nth-child(2) {
