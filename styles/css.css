@@ -422,6 +422,8 @@ header.mobile {
    min-height: 3.85vw;
 	 position: relative;
 	 transition: 0.2s;
+   cursor: pointer;
+   user-select: none;
 }
  .tab::before {
 	 content: "";
