@@ -213,12 +213,19 @@
   }
 
   .lang-dropdown {
-    left: 2.5vw;
+    top: -0.75vw;
+    left: -38vw;
+    flex-direction: row;
   }
 
   .lang-dropdown a {
+    margin: 1vw;
+    transform: skew(-15deg);
+  }
+  .lang-dropdown a span {
     font-size: 2.667vw;
     padding: 2.133vw 3.2vw;
+    transform: skew(15deg);
   }
 
   .lang-dropdown a img {
@@ -345,16 +352,22 @@
     display: none;
   }
 
-  .tabs .tab {
+  .tabs .tab  {
+    margin: 0 2vw 2vw 0!important;
+  }
+
+  .tabs .tab span {
     font-size: 3.2vw;
     padding: 1.867vw 6.667vw;
     background: #D6EDFF;
     font-family:"ubuntu-regular", sans-serif;
-    margin: 0 1vw 1vw 0!important;
+    color: #333;
+    animation: none;
   }
-  .tabs .tab.active {
+  .tabs .tab.active span {
     background: #1899FF;
     transform: none;
+    color: #fff;
   }
 
   .tab-info {
@@ -789,6 +802,10 @@
   footer .bot-line {
     height: 15.2vw;
     font-size: 3.2vw;
+  }
+  footer .bot-line .container {
+    width: 100%;
+    padding: 0 5.33vw
   }
 
 }
