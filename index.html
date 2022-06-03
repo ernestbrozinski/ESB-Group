@@ -111,22 +111,22 @@
       <div class="tabs-wrap">
         <div class="tabs">
           <span class="tab">
-            <span>Кондиционирование</span>
+            <h2 class="tab-text">Кондиционирование</h2>
           </span>
           <span class="tab">
-            <span>Вентиляция</span>
+            <h2 class="tab-text">Вентиляция</h2>
           </span>
           <span class="tab">
-            <span>Электронные системы безопасности</span>
+            <h2 class="tab-text">Электронные системы безопасности</h2>
           </span>
           <span class="tab">
-            <span>Отопление</span>
+            <h2 class="tab-text">Отопление</h2>
           </span>
           <span class="tab">
-            <span>BMS. Система управления домом</span>
+            <h2 class="tab-text">BMS. Система управления домом</h2>
           </span>
           <span class="tab">
-            <span>Электронные системы безопасности</span>
+            <h2 class="tab-text">Электронные системы безопасности</h2>
           </span>
         </div>
 
@@ -136,7 +136,7 @@
               <div class="video-preview">
                 <img src="/images/video-preview.png" alt="">
               </div>
-              <video preload="auto"  no-controls>
+              <video muted="muted" no-controls>
                 <source src="/video/video.webm" type="video/mp4">
               </video>
             </div>
@@ -147,7 +147,7 @@
               <div class="video-preview">
                 <img src="/images/projects/project1.jpeg" alt="">
               </div>
-              <video preload="auto"  no-controls>
+              <video muted="muted" preload="auto"  no-controls>
                 <source src="/video/video.webm" type="video/mp4">
               </video>
             </div>
@@ -158,7 +158,7 @@
               <div class="video-preview">
                 <img src="/images/projects/project2.jpeg" alt="">
               </div>
-              <video preload="auto"  no-controls>
+              <video muted="muted" preload="auto"  no-controls>
                 <source src="/video/video.webm" type="video/mp4">
               </video>
             </div>
@@ -169,7 +169,7 @@
               <div class="video-preview">
                 <img src="/images/projects/project3.jpeg" alt="">
               </div>
-              <video preload="auto"  no-controls>
+              <video muted="muted" preload="auto"  no-controls>
                 <source src="/video/video.webm" type="video/mp4">
               </video>
             </div>
@@ -180,7 +180,7 @@
               <div class="video-preview">
                 <img src="/images/projects/project4.jpeg" alt="">
               </div>
-              <video preload="auto"  no-controls>
+              <video muted="muted" preload="auto"  no-controls>
                 <source src="/video/video.webm" type="video/mp4">
               </video>
             </div>
@@ -191,7 +191,7 @@
               <div class="video-preview">
                 <img src="/images/projects/project5.jpeg" alt="">
               </div>
-              <video preload="auto"  no-controls>
+              <video muted="muted" preload="auto"  no-controls>
                 <source src="/video/video.webm" type="video/mp4">
               </video>
             </div>
@@ -629,6 +629,7 @@
       };
       var mask = IMask(element, maskOptions);
 
+
       // MODAL CUSTOM
       const modal = document.querySelector('.modal'),
             modalBtn = document.querySelectorAll('.modal-btn'),
@@ -751,6 +752,13 @@
         })
       })
       tabs[0].click();
+      function tabClick() {
+        videos[0].play();
+        console.log('asd')
+      }
+      setTimeout(
+        tabClick, 5000
+      );
 
 
       //TABS ADDITIONAL STYLE

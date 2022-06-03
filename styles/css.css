@@ -306,7 +306,7 @@ header.mobile {
 }
 .video-preview.main-video {
   background: #333;
-  height: 56.25vw;
+  height: 60.521vw;
 }
 .video-preview::after {
   content: '';
@@ -399,92 +399,107 @@ header.mobile {
   align-items: flex-start;
 }
 
+@keyframes transform-button {
+  0% {
+    transform: translateX(0)
+ }
+  50% {
+    transform: translateX(-2.604vw)
+ }
+  100% {
+    transform: translateX(-1.563vw)
+ }
+}
+
 .tabs {
-  display: flex;
-  flex-direction: column;
   width: 23.438vw;
   margin: 0 1.811vw 0 0;
   flex: none;
+  justify-content: flex-end;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes transform-button {
-	 0% {
-		 width: 20.833vw;
-	}
-	 50% {
-		 width: 23.438vw;
-	}
-	 100% {
-		 width: 22.396vw;
-	}
+.tab {
+  display: block;
+  width: 23.438vw;
+  position: relative;
+  transition: 0.2s;
+  cursor: pointer;
+  user-select: none;
 }
- .tab {
-   min-height: 3.85vw;
-	 position: relative;
-	 transition: 0.2s;
-   cursor: pointer;
-   user-select: none;
+
+.tab:not(:last-child) {
+  margin: 0 0 10px 0;
 }
- .tab::before {
-	 content: "";
-	 width: 2.708vw;
-	 height: 2.188vw;
-	 border-top: 0.156vw solid #44b3cd;
-	 border-right: 0.156vw solid #44b3cd;
-	 position: absolute;
-	 top: 0;
-	 right: 0;
-	 z-index: 1;
-	 transition: 0.3s;
+
+.tab::before {
+  content: "";
+  width: 2.708vw;
+  height: 2.188vw;
+  border-top: 0.156vw solid #44b3cd;
+  border-right: 0.156vw solid #44b3cd;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  transition: 0.3s;
 }
- .tab::after {
-	 content: "";
-	 width: 2.708vw;
-	 height: 2.188vw;
-	 border-bottom: 0.156vw solid #44b3cd;
-	 border-left: 0.156vw solid #44b3cd;
-	 position: absolute;
-	 bottom: 0;
-	 left: 0;
-	 z-index: 1;
-	 transition: 0.3s;
+.tab::after {
+  content: "";
+  width: 2.708vw;
+  height: 2.188vw;
+  border-bottom: 0.156vw solid #44b3cd;
+  border-left: 0.156vw solid #44b3cd;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transition: 0.3s;
 }
- .tab.active span {
-	 animation: 0.3s transform-button linear forwards;
-   color: #fff;
+.tab.active .tab-text{
+  animation: 0.3s transform-button linear forwards;
 }
- .tab.active::before {
-	 width: 0;
-	 height: 100%;
-	 transition: 0.3s;
+.tab.active::before {
+  width: 0;
+  height: 4.427vw;
+  transition: 0.3s;
 }
- .tab.active::after {
-	 width: 0;
-	 height: 0;
-	 transition: 0.3s;
+.tab.active::after {
+  width: 0;
+  height: 0;
+  transition: 0.3s;
+  animation: 0.3s transform-button linear forwards;
+  opacity: 0;
 }
- .tab.active span {
-	 background: linear-gradient(69.59deg, #023497 -6.42%, #19aec6 97.41%, #595959 158.84%)!important;
-	 backdrop-filter: blur(85.8068px);
+
+.tab:hover .tab-text {
+  background: radial-gradient(286.47% 1468.06% at 41.08% 68.24%, rgba(124, 173, 248, 0.32) 0%, rgba(148, 147, 147, 0.45) 100%);
 }
- .tab span {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   font-size: 1.13vw;
-	 transition: 0.3s;
-	 width: 100%;
-	 min-height: 3.85vw;
-	 background: radial-gradient(286.47% 1468.06% at 41.08% 68.24%, rgba(166, 202, 255, 0.32) 0%, rgba(255, 255, 255, 0.45) 100%);
-	 backdrop-filter: blur(75px);
-	 border: none;
-   transition: .15s background;
+
+.tab.active .tab-text {
+  background: linear-gradient(69.59deg, #023497 -6.42%, #19aec6 97.41%, #595959 158.84%);
+  backdrop-filter: blur(85.8068px);
+  color: #fff;
+  
 }
-.tab span:hover {
-  background: radial-gradient(286.47% 1468.06% at 41.08% 68.24%, rgba(145, 186, 248, 0.32) 0%, rgba(232, 231, 231, 0.45) 100%);
+.tab .tab-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.3s;
+  width: 100%;
+  font-size: 1.13vw;
+  min-height: 4.427vw;
+  margin: 0;
+  background: radial-gradient(286.47% 1468.06% at 41.08% 68.24%, rgba(166, 202, 255, 0.32) 0%, rgba(255, 255, 255, 0.45) 100%);
+  backdrop-filter: blur(75px);
+  border: none;
+  padding: 0 2vw;
 }
- 
+
 .tabs .tab:not(:last-child) {
   margin: 0 0 0.906vw 0;
 }
@@ -956,6 +971,7 @@ header.mobile {
   height: 27.174vw;
   flex: none;
   z-index: 9;
+  transition: .3s transform;
 }
 .benefits-item:nth-child(2) img {
   max-width: 7.246vw!important;

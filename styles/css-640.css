@@ -345,6 +345,7 @@
     margin: 0;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .tabs .tab::before,
@@ -353,10 +354,11 @@
   }
 
   .tabs .tab  {
+    width: auto;
     margin: 0 2vw 2vw 0!important;
   }
 
-  .tabs .tab span {
+  .tabs .tab .tab-text {
     font-size: 3.2vw;
     padding: 1.867vw 6.667vw;
     background: #D6EDFF;
@@ -364,7 +366,7 @@
     color: #333;
     animation: none;
   }
-  .tabs .tab.active span {
+  .tabs .tab.active .tab-text {
     background: #1899FF;
     transform: none;
     color: #fff;
@@ -614,6 +616,11 @@
   .benefits-item .desc {
     font-size: 4.267vw;
     width: 100%;
+  }
+
+  .benefits-item:hover {
+    transform: scale(1.05)!important;
+    transition: .3s transform
   }
 
   .benefits-item:nth-child(2) {
