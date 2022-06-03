@@ -302,6 +302,7 @@ header.mobile {
 }
 .video-preview.main-video {
   background: #333;
+  overflow: hidden;
 }
 .video-preview::after {
   content: '';

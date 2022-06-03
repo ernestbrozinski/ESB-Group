@@ -106,6 +106,7 @@
     backdrop-filter: blur(91.5274px);
     padding: 2.667vw 0;
     z-index: 99;
+    overflow: hidden;
   }
   header.mobile .container {
     display: flex;
@@ -650,6 +651,13 @@
     top: 50%;
     transform: translate(0, -50%);
     left: 10.667vw;
+  }
+
+  .benefits-item:nth-child(1) {
+    transform: translateX(0);
+  }
+  .benefits-item:nth-child(3) {
+    transform: translateX(0);
   }
 
   .partners-block {
